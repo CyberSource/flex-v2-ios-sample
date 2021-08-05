@@ -7,6 +7,10 @@
 
 import Foundation
 
+/*
+    Helper class used to validate and format Card, Expiration Date
+*/
+
 extension String {
     static func space() -> String {
         return " "

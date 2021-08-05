@@ -8,10 +8,6 @@
 import UIKit
 import flex_api_ios_sdk
 
-let merchantId = "mpos_sdk_cas"
-let merchantKey = "e2b2579c-4c50-4644-8d9e-bdec9a70396c"
-let merchantSecret = "EAPqEZxEIVaGFoyxadyDB/mGl8WlZXrUxbm9eKI4l3c="
-
 let kFlexSDKDemoCreditCardLength:Int = 16
 let kFlexSDKDemoCreditCardLengthPlusSpaces:Int = (kFlexSDKDemoCreditCardLength + 3)
 let kFlexSDKDemoExpirationLength:Int = 4
@@ -27,9 +23,6 @@ let kFlexSDKDemoSlash:String = "/"
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
-    //Environment to test
-    private let environment = Environment.sandbox
-
     @IBOutlet weak var cardNumberTextField:UITextField!
     @IBOutlet weak var expirationMonthTextField:UITextField!
     @IBOutlet weak var expirationYearTextField:UITextField!
@@ -44,7 +37,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     fileprivate var cardExpirationYear:String!
     fileprivate var cardVerificationCode:String!
     fileprivate var cardNumberBuffer:String!
-    fileprivate var responseString: String = ""
+    fileprivate var captureContextResponseString: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,7 +76,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func tokenize() {
-        createCaptureContext()
+        requestCaptureContext()
     }
 
     func initializeMembers() {
@@ -103,73 +96,44 @@ class ViewController: UIViewController, UITextFieldDelegate {
             self.activityIndicatorAcceptSDKDemo.stopAnimating()
         }
     }
-    private func createCaptureContext() {
+    
+    private func requestCaptureContext() {
         showActivityIndicator(show: true)
         hideError()
         
-        let cardData = FlexCardData()
-        cardData.number = FlexFieldData(isRequired: true)
-        cardData.securityCode = FlexFieldData(isRequired: true)
-        cardData.expirationMonth = FlexFieldData(isRequired: true)
-        cardData.expirationYear = FlexFieldData(isRequired: true)
-        cardData.type = FlexFieldData(isRequired: false)
-        
-        let paymentInfo = FlexPaymentInfo(data: cardData)
-        let sessionFields = FlexSessionFields(info: paymentInfo)
-        let requestObj = FlexSessionRequest(fields: sessionFields)
-        
-        let httpClient = URLSessionHTTPClient()
-
-        var payloadData: Data
-        do {
-            payloadData = try JSONEncoder().encode(requestObj)
-        } catch let error {
-            showActivityIndicator(show: false)
-            self.showSessionCreationError(error: error)
-            return
-        }
-
-        let merchantConfig = createMerchantConfig()
-        merchantConfig.requestData = String(decoding: payloadData, as: UTF8.self)
-        
-        let apiUrl = URL(string: self.environment.scheme + self.environment.host + self.environment.path)!
-        let api = FlexSessionCreator(url: apiUrl, client: httpClient, payload: payloadData, headers: createHeaders(merchantConfig: merchantConfig))
-        
-        api.createCaptureContext { [weak self] (result) in
+        /*  WARNING:
+            Before creating TransientToken make sure you have a valid capture context.
+            And below creation of capture context code is for demonstration purpose only.
+        */
+        CaptureContext().createCaptureContext() { [weak self] (result) in
             DispatchQueue.main.async {
                 self?.showActivityIndicator(show: false)
-
                 switch(result) {
                 case let .success(response):
                     if let sessionToken = response.keyId {
-                        self?.responseString = sessionToken
+                        self?.captureContextResponseString = sessionToken
                         self?.createTransientToken()
                     }
                     break
                 case let .failure(error):
                     self?.showSessionCreationError(error: error)
                 }
-                //print(result)
             }
         }
     }
-        
-    private func showSessionCreationError(error: Error) {
-        self.errorContainerView.isHidden = false
-        self.errorDescriptionLabel.text = error.localizedDescription
-    }
-    
-    private func hideError() {
-        self.errorContainerView.isHidden = true
-    }
-    
+                
     private func createTransientToken() {
         showActivityIndicator(show: true)
         hideError()
 
+        /*
+            This is the place where we use FlexService->createTransientToken() method to generate the TransientToken.
+            Input for createTokenAsyncTask() method will be capture context(captureContextResponseString) string and the event listeners. Note createTransientToken() is an asynchronous method.
+        */
+
         let service = FlexService()
         
-        service.createTransientToken(from: self.responseString, data: getPayload()) { (result) in
+        service.createTransientToken(from: self.captureContextResponseString, data: getPayload()) { (result) in
             DispatchQueue.main.async { [weak self] in
                 self?.showActivityIndicator(show: false)
                 
@@ -183,11 +147,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    private func showTokenCreationError(error: FlexErrorResponse) {
-        self.errorContainerView.isHidden = false
-        self.errorDescriptionLabel.text = error.responseStatus.message
-    }
-
+    /*
+        Payload is must for creating transient token. The sample payload creation in this SampleApp is
+        only for demonstration purpose, this should be changed according to your use cases.
+    */
     private func getPayload() -> [String: String] {
         var payload = [String: String]()
         if let cardNumber = self.cardNumber {
@@ -209,8 +172,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return payload
     }
     
-    private func createMerchantConfig() -> ApiConfig {
-        return ApiConfig(id: merchantId, key: merchantKey, secret: merchantSecret, env: self.environment)
+    private func showSessionCreationError(error: Error) {
+        self.errorContainerView.isHidden = false
+        self.errorDescriptionLabel.text = error.localizedDescription
+    }
+    
+    private func hideError() {
+        self.errorContainerView.isHidden = true
+    }
+
+    private func showTokenCreationError(error: FlexErrorResponse) {
+        self.errorContainerView.isHidden = false
+        self.errorDescriptionLabel.text = error.responseStatus.message
     }
     
     func formatCardNumber(_ textField:UITextField) {
@@ -557,29 +530,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.destination is TokenResponseViewController {
             let vc = segue.destination as? TokenResponseViewController
-            vc?.responseString = self.responseString
+            vc?.responseString = self.captureContextResponseString
         }
-    }
-    
-    private func createHeaders(merchantConfig: ApiConfig) -> [String: String] {
-        var headers = [String: String]()
-        headers[Constants.V_C_MERCHANTID] = merchantConfig.merchantID
-        headers[Constants.ACCEPT] = "application/jwt"
-        headers[Constants.CONTENTTYPE] = "application/json; charset=utf-8"
-        headers[Constants.DATE] = PayloadUtility().iso8601().full
-        //headers[Constants.HOST] = Constants.HOSTCAS
-        headers[Constants.CONNECTION] = "keep-alive"
-        headers[Constants.USERAGENT] = "iOS"
-
-        let value = HTTPSignature(merchantConfig: merchantConfig).getHTTPSignature()
-        headers[Constants.SIGNATURE] = value
-
-        let payloadDigest = PayloadDigest(merchantConfig: merchantConfig)
-        if let digest = payloadDigest.getDigest() {
-            headers[Constants.DIGEST] = digest
-        }
-
-        return headers
     }
     
     @IBAction func linkBtnClicked() {

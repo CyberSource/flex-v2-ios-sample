@@ -67,6 +67,7 @@ class FlexSDKCardFieldsValidator: NSObject {
         return (components?.year)! % 100
     }
     
+    // Helper method to validate card
     @objc func validateCardNumberWithString(_ inCardNumber: String) -> Bool {
         var result = false
         
@@ -81,6 +82,7 @@ class FlexSDKCardFieldsValidator: NSObject {
         return result
     }
     
+    // Helper method to validate Month
     @objc func validateMonthWithString(_ inMonth: String) -> Bool {
         var result = false
         
@@ -96,6 +98,7 @@ class FlexSDKCardFieldsValidator: NSObject {
         return result
     }
 
+    // Helper method to validate Year
     @objc func validateYearWithString(_ inYear: String) -> Bool {
         var result = false
         
@@ -127,6 +130,7 @@ class FlexSDKCardFieldsValidator: NSObject {
         return result
     }
 
+    // Helper method to validate security code
     @objc func validateSecurityCodeWithString(_ inSecurityCode: String) -> Bool {
         var result = false
         
@@ -140,6 +144,7 @@ class FlexSDKCardFieldsValidator: NSObject {
         return result
     }
     
+    // Helper method to validate zipcode
     @objc func validateZipCodeWithString(_ inZipCode: String) -> Bool {
         var result = false
         
@@ -194,6 +199,7 @@ class FlexSDKCardFieldsValidator: NSObject {
         return result
     }
 
+    // Helper method to validate Card Expiration date
     @objc func validateExpirationDate(_ inMonth: String, inYear:String) -> Bool {
         var result = false
 

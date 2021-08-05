@@ -18,39 +18,39 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		WsHC+rKro7WO54Ik0T8wJCKwgxc=
+		p2Fv0KwjA2dRlFNSFrUI53SGH+E=
 		</data>
-		<key>Modules/flex_api_ios_sdk.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/flex_api_ios_sdk.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		3zIZxq4FWWMIY8wJeBXOByhe1W8=
+		ZjBjZAX72JMp/EC84RGZzxalut4=
 		</data>
-		<key>Modules/flex_api_ios_sdk.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/flex_api_ios_sdk.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		3zIZxq4FWWMIY8wJeBXOByhe1W8=
+		ZjBjZAX72JMp/EC84RGZzxalut4=
 		</data>
-		<key>Modules/flex_api_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/flex_api_ios_sdk.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		ZcGMsOMM19EXRhOoKGVV4Ifqvk0=
+		CCN7BQxW0cAKXAjNVfQYLo604rc=
 		</data>
-		<key>Modules/flex_api_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/flex_api_ios_sdk.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		7H66Pi6l8cFEFTg6aHo19WhIQJw=
+		uDjsKaHhZzblhV6aWhI3WjpZujQ=
 		</data>
-		<key>Modules/flex_api_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/flex_api_ios_sdk.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		iLoXH+3a87900m2sg8QEyM3kx/4=
+		D5RZYl+vIDIgMRufnXlHFfc37ls=
 		</data>
-		<key>Modules/flex_api_ios_sdk.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/flex_api_ios_sdk.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		ZcGMsOMM19EXRhOoKGVV4Ifqvk0=
+		CCN7BQxW0cAKXAjNVfQYLo604rc=
 		</data>
-		<key>Modules/flex_api_ios_sdk.swiftmodule/x86_64.swiftinterface</key>
+		<key>Modules/flex_api_ios_sdk.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		7H66Pi6l8cFEFTg6aHo19WhIQJw=
+		uDjsKaHhZzblhV6aWhI3WjpZujQ=
 		</data>
-		<key>Modules/flex_api_ios_sdk.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/flex_api_ios_sdk.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		iLoXH+3a87900m2sg8QEyM3kx/4=
+		D5RZYl+vIDIgMRufnXlHFfc37ls=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -92,60 +92,60 @@
 			4d4kz9V8l7/2H3boJ/1kifLVal1LD40MTzEKfY5SeK8=
 			</data>
 		</dict>
-		<key>Modules/flex_api_ios_sdk.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/flex_api_ios_sdk.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KjOvOU3nop3gGCUZwu/qnRqYMBYV2BpURWOT9vJkQsA=
+			RYEXwaJpzPPu7938XuRPXiIz8KDbE4lwCDzaoo36rMc=
 			</data>
 		</dict>
-		<key>Modules/flex_api_ios_sdk.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/flex_api_ios_sdk.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KjOvOU3nop3gGCUZwu/qnRqYMBYV2BpURWOT9vJkQsA=
+			RYEXwaJpzPPu7938XuRPXiIz8KDbE4lwCDzaoo36rMc=
 			</data>
 		</dict>
-		<key>Modules/flex_api_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/flex_api_ios_sdk.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ldOKiYMUJAzjCxeNRU6rNsB8gKU/TgIz1/VY4/fQWIg=
+			WtOUNNhODybhW6i1uXU2RRJ5uF1Wk75tSPtCcjz8vYE=
 			</data>
 		</dict>
-		<key>Modules/flex_api_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/flex_api_ios_sdk.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AHcBjya1/jLP/+g30aGEvy5ZUxqljmZkNY8StCDCVk4=
+			PhgLd4loiBL7M9NMiwOkJxN1pXnwvIL8lvCtvKrA1Gg=
 			</data>
 		</dict>
-		<key>Modules/flex_api_ios_sdk.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/flex_api_ios_sdk.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5yplGwlXIVC4bwI6K78YX8LtOcxmoOSm0yTXgtu5G8o=
+			iLqfEwJ38zNM/6vCToDbvS8Ksx7z7yMcAXo+wBcP7cY=
 			</data>
 		</dict>
-		<key>Modules/flex_api_ios_sdk.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/flex_api_ios_sdk.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ldOKiYMUJAzjCxeNRU6rNsB8gKU/TgIz1/VY4/fQWIg=
+			WtOUNNhODybhW6i1uXU2RRJ5uF1Wk75tSPtCcjz8vYE=
 			</data>
 		</dict>
-		<key>Modules/flex_api_ios_sdk.swiftmodule/x86_64.swiftinterface</key>
+		<key>Modules/flex_api_ios_sdk.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AHcBjya1/jLP/+g30aGEvy5ZUxqljmZkNY8StCDCVk4=
+			PhgLd4loiBL7M9NMiwOkJxN1pXnwvIL8lvCtvKrA1Gg=
 			</data>
 		</dict>
-		<key>Modules/flex_api_ios_sdk.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/flex_api_ios_sdk.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5yplGwlXIVC4bwI6K78YX8LtOcxmoOSm0yTXgtu5G8o=
+			iLqfEwJ38zNM/6vCToDbvS8Ksx7z7yMcAXo+wBcP7cY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
