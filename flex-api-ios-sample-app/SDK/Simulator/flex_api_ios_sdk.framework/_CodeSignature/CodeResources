@@ -16,6 +16,10 @@
 		<data>
 		VgcTVp20FajpzMDJ1nUrmJ4fB4Y=
 		</data>
+		<key>Headers/module.modulemap</key>
+		<data>
+		2yCKxsoDg9vI2uewYEw2W/tznJE=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		DoULtQ7Zousp+b2Dj3/KDTY9Abk=
@@ -90,6 +94,13 @@
 			<key>hash2</key>
 			<data>
 			xcAhuL+N70cLbvYRgCL0v/6kOhF9SbJDsxieCAFpvjE=
+			</data>
+		</dict>
+		<key>Headers/module.modulemap</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3Qy+QKFJz52brdTzG0KiiT0IfIgcmyjCx1CkmDtNcxA=
 			</data>
 		</dict>
 		<key>Modules/flex_api_ios_sdk.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>

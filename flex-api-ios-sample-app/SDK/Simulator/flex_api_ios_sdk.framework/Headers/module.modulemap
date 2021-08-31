@@ -1,0 +1,18 @@
+//
+//  module.modulemap
+//  flex-client-sdk-ios
+//
+//  Created by Rakesh Ramamurthy on 18/04/21.
+//
+
+//#ifndef module_h
+//#define module_h
+//
+//
+//#endif /* module_h */
+
+module CybersourceFlexSDKPrivate {
+    header "../Internal/RSA/RSAUtils.h"
+    header "../Shared/AesGcm/Classes/CybsAGCipheredData.h"
+    header "../Shared/AesGcm/Classes/CybsAesGcm.h"
+}
