@@ -1,4 +1,0 @@
-framework module flex_api_ios_sdk {
-  header "flex_api_ios_sdk-Swift.h"
-  requires objc
-}

@@ -30,9 +30,9 @@
 		A081680F262A98780058F798 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A081680E262A98780058F798 /* Constants.swift */; };
 		A0816815262A9F570058F798 /* PayloadUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0816814262A9F570058F798 /* PayloadUtility.swift */; };
 		A081681B262A9FEB0058F798 /* PayloadDigest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A081681A262A9FEB0058F798 /* PayloadDigest.swift */; };
+		A0A0B0A226E3AC5800842537 /* flex_api_ios_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A0B09F26E3AC3E00842537 /* flex_api_ios_sdk.framework */; };
+		A0A0B0A326E3AC5800842537 /* flex_api_ios_sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0A0B09F26E3AC3E00842537 /* flex_api_ios_sdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A0EF57AD26523B540082BE26 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF57AC26523B540082BE26 /* Environment.swift */; };
-		A0F2211626AD7C7600E1ED2F /* flex_api_ios_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0F2211126AD7C3900E1ED2F /* flex_api_ios_sdk.framework */; };
-		A0F2211726AD7C7600E1ED2F /* flex_api_ios_sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0F2211126AD7C3900E1ED2F /* flex_api_ios_sdk.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A0FEA427260DAEC40071A290 /* FlexSDKCardFieldsValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FEA426260DAEC40071A290 /* FlexSDKCardFieldsValidator.swift */; };
 		A0FEA42C260DB05C0071A290 /* FlexSDKStringValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FEA42B260DB05C0071A290 /* FlexSDKStringValidator.swift */; };
 		A0FEA431260F073B0071A290 /* TokenResponseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FEA430260F073B0071A290 /* TokenResponseViewController.swift */; };
@@ -53,6 +53,20 @@
 			remoteGlobalIDString = A04693572601BA7100319C69;
 			remoteInfo = "flex-client-sdk-ios";
 		};
+		A0A0B09E26E3AC3E00842537 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0A0B09926E3AC3E00842537 /* flex-api-ios-sdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0C3D434264A991F0071DB05;
+			remoteInfo = "flex-api-ios-sdk";
+		};
+		A0A0B0A026E3AC3E00842537 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0A0B09926E3AC3E00842537 /* flex-api-ios-sdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0C3D43D264A991F0071DB05;
+			remoteInfo = "flex-api-ios-sdkTests";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,7 +76,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A0F2211726AD7C7600E1ED2F /* flex_api_ios_sdk.framework in Embed Frameworks */,
+				A0A0B0A326E3AC5800842537 /* flex_api_ios_sdk.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,8 +113,8 @@
 		A081680E262A98780058F798 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A0816814262A9F570058F798 /* PayloadUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadUtility.swift; sourceTree = "<group>"; };
 		A081681A262A9FEB0058F798 /* PayloadDigest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadDigest.swift; sourceTree = "<group>"; };
+		A0A0B09926E3AC3E00842537 /* flex-api-ios-sdk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "flex-api-ios-sdk.xcodeproj"; path = "flex-api-ios-sdk/flex-api-ios-sdk.xcodeproj"; sourceTree = "<group>"; };
 		A0EF57AC26523B540082BE26 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
-		A0F2211126AD7C3900E1ED2F /* flex_api_ios_sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = flex_api_ios_sdk.framework; path = "flex-api-ios-sample-app/SDK/Simulator/flex_api_ios_sdk.framework"; sourceTree = "<group>"; };
 		A0FEA426260DAEC40071A290 /* FlexSDKCardFieldsValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexSDKCardFieldsValidator.swift; sourceTree = "<group>"; };
 		A0FEA42B260DB05C0071A290 /* FlexSDKStringValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexSDKStringValidator.swift; sourceTree = "<group>"; };
 		A0FEA430260F073B0071A290 /* TokenResponseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenResponseViewController.swift; sourceTree = "<group>"; };
@@ -111,7 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0F2211626AD7C7600E1ED2F /* flex_api_ios_sdk.framework in Frameworks */,
+				A0A0B0A226E3AC5800842537 /* flex_api_ios_sdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +149,7 @@
 		A046934F2601BA7100319C69 = {
 			isa = PBXGroup;
 			children = (
+				A0A0B09926E3AC3E00842537 /* flex-api-ios-sdk.xcodeproj */,
 				A046935A2601BA7100319C69 /* flex-api-ios-sample-app */,
 				A04693712601BA7600319C69 /* fleflex-api-ios-sample-appTests */,
 				A046937C2601BA7600319C69 /* flex-api-ios-sample-appUITests */,
@@ -218,7 +233,6 @@
 		A08166F22628065A0058F798 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A0F2211126AD7C3900E1ED2F /* flex_api_ios_sdk.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -232,6 +246,15 @@
 				A0816814262A9F570058F798 /* PayloadUtility.swift */,
 			);
 			path = HTTPSignature;
+			sourceTree = "<group>";
+		};
+		A0A0B09A26E3AC3E00842537 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0A0B09F26E3AC3E00842537 /* flex_api_ios_sdk.framework */,
+				A0A0B0A126E3AC3E00842537 /* flex-api-ios-sdkTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		A0FEA435260F0AAB0071A290 /* Utilities */ = {
@@ -336,6 +359,12 @@
 			);
 			productRefGroup = A04693592601BA7100319C69 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A0A0B09A26E3AC3E00842537 /* Products */;
+					ProjectRef = A0A0B09926E3AC3E00842537 /* flex-api-ios-sdk.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A04693572601BA7100319C69 /* flex-api-ios-sample-app */,
@@ -344,6 +373,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A0A0B09F26E3AC3E00842537 /* flex_api_ios_sdk.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = flex_api_ios_sdk.framework;
+			remoteRef = A0A0B09E26E3AC3E00842537 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A0A0B0A126E3AC3E00842537 /* flex-api-ios-sdkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "flex-api-ios-sdkTests.xctest";
+			remoteRef = A0A0B0A026E3AC3E00842537 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A04693562601BA7100319C69 /* Resources */ = {
@@ -581,7 +627,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 8WQ4DJVQC2;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/flex-api-ios-sample-app/SDK/Simulator";
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "flex-api-ios-sample-app/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -608,7 +654,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 8WQ4DJVQC2;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/flex-api-ios-sample-app/SDK/Simulator";
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "flex-api-ios-sample-app/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

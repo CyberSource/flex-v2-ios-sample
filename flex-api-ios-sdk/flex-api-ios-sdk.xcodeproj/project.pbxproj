@@ -1,0 +1,1028 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0C3D43E264A991F0071DB05 /* flex_api_ios_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C3D434264A991F0071DB05 /* flex_api_ios_sdk.framework */; };
+		A0C3D445264A991F0071DB05 /* flex-api-ios-sdk.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C3D437264A991F0071DB05 /* flex-api-ios-sdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0C3D4C5264A99800071DB05 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D453264A997F0071DB05 /* Constants.swift */; };
+		A0C3D4C6264A99800071DB05 /* RemoteFlexToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D454264A997F0071DB05 /* RemoteFlexToken.swift */; };
+		A0C3D4C7264A99800071DB05 /* FlexRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D455264A997F0071DB05 /* FlexRequest.swift */; };
+		A0C3D4C8264A99800071DB05 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D456264A997F0071DB05 /* URLSessionHTTPClient.swift */; };
+		A0C3D4C9264A99800071DB05 /* RemoteFlexTokenMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D457264A997F0071DB05 /* RemoteFlexTokenMapper.swift */; };
+		A0C3D4CA264A99800071DB05 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D458264A997F0071DB05 /* HTTPClient.swift */; };
+		A0C3D4CB264A99800071DB05 /* RemoteFlexTokensGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D459264A997F0071DB05 /* RemoteFlexTokensGenerator.swift */; };
+		A0C3D4CC264A99800071DB05 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D45A264A997F0071DB05 /* Tools.swift */; };
+		A0C3D4CD264A99800071DB05 /* TransientToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D45B264A997F0071DB05 /* TransientToken.swift */; };
+		A0C3D4CE264A99800071DB05 /* FlexInternalErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D45C264A997F0071DB05 /* FlexInternalErrors.swift */; };
+		A0C3D4CF264A99800071DB05 /* FlexService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D45D264A997F0071DB05 /* FlexService.swift */; };
+		A0C3D4D1264A99800071DB05 /* DigestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D45F264A997F0071DB05 /* DigestHelper.swift */; };
+		A0C3D4D3264A99800071DB05 /* RSAUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D462264A997F0071DB05 /* RSAUtilities.swift */; };
+		A0C3D4D4264A99800071DB05 /* Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C3D464264A997F0071DB05 /* Base64.h */; };
+		A0C3D4D5264A99800071DB05 /* RSAUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C3D465264A997F0071DB05 /* RSAUtils.h */; };
+		A0C3D4D6264A99800071DB05 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D466264A997F0071DB05 /* Base64.m */; };
+		A0C3D4D7264A99800071DB05 /* zu.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0C3D468264A997F0071DB05 /* zu.txt */; };
+		A0C3D4D8264A99800071DB05 /* ln.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0C3D469264A997F0071DB05 /* ln.txt */; };
+		A0C3D4D9264A99800071DB05 /* wf.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0C3D46A264A997F0071DB05 /* wf.txt */; };
+		A0C3D4DA264A99800071DB05 /* 3g.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0C3D46B264A997F0071DB05 /* 3g.txt */; };
+		A0C3D4DB264A99800071DB05 /* RSAUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D46C264A997F0071DB05 /* RSAUtils.m */; };
+		A0C3D4DC264A99800071DB05 /* CryptoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D46D264A997F0071DB05 /* CryptoUtils.swift */; };
+		A0C3D4DE264A99800071DB05 /* FlexServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D46F264A997F0071DB05 /* FlexServiceProtocol.swift */; };
+		A0C3D4DF264A99800071DB05 /* LongTermKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D470264A997F0071DB05 /* LongTermKey.swift */; };
+		A0C3D4E0264A99800071DB05 /* CaptureContextImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D471264A997F0071DB05 /* CaptureContextImpl.swift */; };
+		A0C3D4E1264A99800071DB05 /* FlexErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D472264A997F0071DB05 /* FlexErrorResponse.swift */; };
+		A0C3D4E2264A99800071DB05 /* Claims.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D475264A997F0071DB05 /* Claims.swift */; };
+		A0C3D4E3264A99800071DB05 /* RSAKeyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D476264A997F0071DB05 /* RSAKeyType.swift */; };
+		A0C3D4E4264A99800071DB05 /* JWTVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D477264A997F0071DB05 /* JWTVerifier.swift */; };
+		A0C3D4E5264A99800071DB05 /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D478264A997F0071DB05 /* JWT.swift */; };
+		A0C3D4E6264A99800071DB05 /* JWTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D479264A997F0071DB05 /* JWTError.swift */; };
+		A0C3D4E7264A99800071DB05 /* RSAAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D47A264A997F0071DB05 /* RSAAlgorithm.swift */; };
+		A0C3D4E8264A99800071DB05 /* ValidateClaimsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D47B264A997F0071DB05 /* ValidateClaimsResult.swift */; };
+		A0C3D4E9264A99800071DB05 /* Data+Base64URLEncoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D47C264A997F0071DB05 /* Data+Base64URLEncoded.swift */; };
+		A0C3D4EA264A99800071DB05 /* CybsFlexJWTClaims.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D47D264A997F0071DB05 /* CybsFlexJWTClaims.swift */; };
+		A0C3D4EB264A99800071DB05 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D47E264A997F0071DB05 /* Header.swift */; };
+		A0C3D4EC264A99800071DB05 /* VerifierAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D47F264A997F0071DB05 /* VerifierAlgorithm.swift */; };
+		A0C3D4ED264A99800071DB05 /* JWTDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D480264A997F0071DB05 /* JWTDecoder.swift */; };
+		A0C3D4EE264A99800071DB05 /* NoneAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D481264A997F0071DB05 /* NoneAlgorithm.swift */; };
+		A0C3D4EF264A99800071DB05 /* CybsAesGcm.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D484264A997F0071DB05 /* CybsAesGcm.m */; };
+		A0C3D4F0264A99800071DB05 /* CybsAGCipheredData.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C3D485264A997F0071DB05 /* CybsAGCipheredData.h */; };
+		A0C3D4F1264A99800071DB05 /* CybsAGError.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D486264A997F0071DB05 /* CybsAGError.m */; };
+		A0C3D4F2264A99800071DB05 /* IAGCipheredData.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C3D487264A997F0071DB05 /* IAGCipheredData.h */; };
+		A0C3D4F3264A99800071DB05 /* CybsAGCipheredData.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D488264A997F0071DB05 /* CybsAGCipheredData.m */; };
+		A0C3D4F4264A99800071DB05 /* CybsAGAesComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D48A264A997F0071DB05 /* CybsAGAesComponents.m */; };
+		A0C3D4F5264A99800071DB05 /* CybsAGGcmMathComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D48B264A997F0071DB05 /* CybsAGGcmMathComponents.m */; };
+		A0C3D4F6264A99800071DB05 /* CybsAGBitwiseComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D48C264A997F0071DB05 /* CybsAGBitwiseComponents.m */; };
+		A0C3D4F7264A99800071DB05 /* CybsAGGcmEndianness.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C3D48D264A997F0071DB05 /* CybsAGGcmEndianness.h */; };
+		A0C3D4F8264A99800071DB05 /* CybsAGTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C3D48E264A997F0071DB05 /* CybsAGTypes.h */; };
+		A0C3D4F9264A99800071DB05 /* CybsAGAesComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C3D48F264A997F0071DB05 /* CybsAGAesComponents.h */; };
+		A0C3D4FA264A99800071DB05 /* CybsAGBitwiseComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C3D490264A997F0071DB05 /* CybsAGBitwiseComponents.h */; };
+		A0C3D4FC264A99800071DB05 /* CybsAGGcmEndianness.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D492264A997F0071DB05 /* CybsAGGcmEndianness.m */; };
+		A0C3D4FD264A99800071DB05 /* CybsAGGcmMathComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C3D493264A997F0071DB05 /* CybsAGGcmMathComponents.h */; };
+		A0C3D4FE264A99800071DB05 /* CybsAesGcm.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C3D494264A997F0071DB05 /* CybsAesGcm.h */; };
+		A0C3D4FF264A99800071DB05 /* CybsAGError.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C3D495264A997F0071DB05 /* CybsAGError.h */; };
+		A0C3D501264A99800071DB05 /* KeyManagementMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D498264A997F0071DB05 /* KeyManagementMode.swift */; };
+		A0C3D502264A99800071DB05 /* Encrypter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D499264A99800071DB05 /* Encrypter.swift */; };
+		A0C3D503264A99800071DB05 /* ContentEncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D49A264A99800071DB05 /* ContentEncryption.swift */; };
+		A0C3D504264A99800071DB05 /* Compressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D49B264A99800071DB05 /* Compressor.swift */; };
+		A0C3D505264A99800071DB05 /* AESGCMEncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D49C264A99800071DB05 /* AESGCMEncryption.swift */; };
+		A0C3D506264A99800071DB05 /* JWE.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D49D264A99800071DB05 /* JWE.swift */; };
+		A0C3D507264A99800071DB05 /* RSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D49F264A99800071DB05 /* RSA.swift */; };
+		A0C3D508264A99800071DB05 /* DataConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D4A0264A99800071DB05 /* DataConvertible.swift */; };
+		A0C3D509264A99800071DB05 /* AlgorithmExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D4A1264A99800071DB05 /* AlgorithmExtensions.swift */; };
+		A0C3D50A264A99800071DB05 /* JWESwiftError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D4A2264A99800071DB05 /* JWESwiftError.swift */; };
+		A0C3D50B264A99800071DB05 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D4A3264A99800071DB05 /* DataExtensions.swift */; };
+		A0C3D50C264A99800071DB05 /* SecureRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D4A4264A99800071DB05 /* SecureRandom.swift */; };
+		A0C3D50D264A99800071DB05 /* AESGCM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D4A5264A99800071DB05 /* AESGCM.swift */; };
+		A0C3D50E264A99800071DB05 /* JWECommonHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D4A6264A99800071DB05 /* JWECommonHeader.swift */; };
+		A0C3D50F264A99800071DB05 /* Algorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D4A7264A99800071DB05 /* Algorithms.swift */; };
+		A0C3D510264A99800071DB05 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D4A8264A99800071DB05 /* Payload.swift */; };
+		A0C3D511264A99800071DB05 /* AESEncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D4A9264A99800071DB05 /* AESEncryption.swift */; };
+		A0C3D512264A99800071DB05 /* Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D4AA264A99800071DB05 /* Serializer.swift */; };
+		A0C3D513264A99800071DB05 /* RSAKeyEncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D4AB264A99800071DB05 /* RSAKeyEncryption.swift */; };
+		A0C3D514264A99800071DB05 /* JWEHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D4AC264A99800071DB05 /* JWEHeader.swift */; };
+		A0C3D527264A99800071DB05 /* FlexTokensGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D4C2264A99800071DB05 /* FlexTokensGenerator.swift */; };
+		A0C3D528264A99800071DB05 /* CaptureContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D4C3264A99800071DB05 /* CaptureContext.swift */; };
+		A0C3D529264A99800071DB05 /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D4C4264A99800071DB05 /* HttpResponse.swift */; };
+		A0C3D546264A99910071DB05 /* FlexServiceEndToEndTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D52F264A99900071DB05 /* FlexServiceEndToEndTest.swift */; };
+		A0C3D547264A99910071DB05 /* rsa_public_key in Resources */ = {isa = PBXBuildFile; fileRef = A0C3D530264A99900071DB05 /* rsa_public_key */; };
+		A0C3D549264A99920071DB05 /* FlexServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D532264A99900071DB05 /* FlexServiceTests.swift */; };
+		A0C3D54A264A99920071DB05 /* RemoteFlexTokensGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D533264A99910071DB05 /* RemoteFlexTokensGeneratorTests.swift */; };
+		A0C3D54B264A99920071DB05 /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D534264A99910071DB05 /* URLSessionHTTPClientTests.swift */; };
+		A0C3D54D264A99920071DB05 /* JWTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D538264A99910071DB05 /* JWTTests.swift */; };
+		A0C3D54E264A99920071DB05 /* CybsCipheredDataTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D53A264A99910071DB05 /* CybsCipheredDataTest.m */; };
+		A0C3D54F264A99920071DB05 /* AesGcmTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D53B264A99910071DB05 /* AesGcmTest.m */; };
+		A0C3D550264A99920071DB05 /* NSData+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D53E264A99910071DB05 /* NSData+HexString.m */; };
+		A0C3D551264A99920071DB05 /* JWEHeaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D541264A99910071DB05 /* JWEHeaderTests.swift */; };
+		A0C3D552264A99920071DB05 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D543264A99910071DB05 /* SharedTestHelpers.swift */; };
+		A0C3D553264A99920071DB05 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3D544264A99910071DB05 /* XCTestCase+MemoryLeakTracking.swift */; };
+		A0EF577E264BF9F10082BE26 /* JWERSATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF577D264BF9F10082BE26 /* JWERSATests.swift */; };
+		A0EF5783264BFA580082BE26 /* RSACryptoTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF5782264BFA580082BE26 /* RSACryptoTestCase.swift */; };
+		A0EF5787264BFA790082BE26 /* CryptoTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF5786264BFA790082BE26 /* CryptoTestCase.swift */; };
+		A0EF578D264BFC250082BE26 /* TestKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0EF578C264BFC250082BE26 /* TestKeys.plist */; };
+		A0EF5799264C00400082BE26 /* RSAKeyManagementModeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF5798264C00400082BE26 /* RSAKeyManagementModeTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0C3D43F264A991F0071DB05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0C3D42B264A991F0071DB05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0C3D433264A991F0071DB05;
+			remoteInfo = CybersourceFlexSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A0C3D434264A991F0071DB05 /* flex_api_ios_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = flex_api_ios_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0C3D437264A991F0071DB05 /* flex-api-ios-sdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "flex-api-ios-sdk.h"; sourceTree = "<group>"; };
+		A0C3D438264A991F0071DB05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0C3D43D264A991F0071DB05 /* flex-api-ios-sdkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "flex-api-ios-sdkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0C3D444264A991F0071DB05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0C3D451264A997F0071DB05 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		A0C3D453264A997F0071DB05 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A0C3D454264A997F0071DB05 /* RemoteFlexToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteFlexToken.swift; sourceTree = "<group>"; };
+		A0C3D455264A997F0071DB05 /* FlexRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexRequest.swift; sourceTree = "<group>"; };
+		A0C3D456264A997F0071DB05 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		A0C3D457264A997F0071DB05 /* RemoteFlexTokenMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteFlexTokenMapper.swift; sourceTree = "<group>"; };
+		A0C3D458264A997F0071DB05 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		A0C3D459264A997F0071DB05 /* RemoteFlexTokensGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteFlexTokensGenerator.swift; sourceTree = "<group>"; };
+		A0C3D45A264A997F0071DB05 /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		A0C3D45B264A997F0071DB05 /* TransientToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransientToken.swift; sourceTree = "<group>"; };
+		A0C3D45C264A997F0071DB05 /* FlexInternalErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexInternalErrors.swift; sourceTree = "<group>"; };
+		A0C3D45D264A997F0071DB05 /* FlexService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexService.swift; sourceTree = "<group>"; };
+		A0C3D45F264A997F0071DB05 /* DigestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DigestHelper.swift; sourceTree = "<group>"; };
+		A0C3D462264A997F0071DB05 /* RSAUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSAUtilities.swift; sourceTree = "<group>"; };
+		A0C3D464264A997F0071DB05 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		A0C3D465264A997F0071DB05 /* RSAUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAUtils.h; sourceTree = "<group>"; };
+		A0C3D466264A997F0071DB05 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		A0C3D468264A997F0071DB05 /* zu.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zu.txt; sourceTree = "<group>"; };
+		A0C3D469264A997F0071DB05 /* ln.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ln.txt; sourceTree = "<group>"; };
+		A0C3D46A264A997F0071DB05 /* wf.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wf.txt; sourceTree = "<group>"; };
+		A0C3D46B264A997F0071DB05 /* 3g.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 3g.txt; sourceTree = "<group>"; };
+		A0C3D46C264A997F0071DB05 /* RSAUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAUtils.m; sourceTree = "<group>"; };
+		A0C3D46D264A997F0071DB05 /* CryptoUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoUtils.swift; sourceTree = "<group>"; };
+		A0C3D46F264A997F0071DB05 /* FlexServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexServiceProtocol.swift; sourceTree = "<group>"; };
+		A0C3D470264A997F0071DB05 /* LongTermKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongTermKey.swift; sourceTree = "<group>"; };
+		A0C3D471264A997F0071DB05 /* CaptureContextImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureContextImpl.swift; sourceTree = "<group>"; };
+		A0C3D472264A997F0071DB05 /* FlexErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexErrorResponse.swift; sourceTree = "<group>"; };
+		A0C3D475264A997F0071DB05 /* Claims.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Claims.swift; sourceTree = "<group>"; };
+		A0C3D476264A997F0071DB05 /* RSAKeyType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSAKeyType.swift; sourceTree = "<group>"; };
+		A0C3D477264A997F0071DB05 /* JWTVerifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTVerifier.swift; sourceTree = "<group>"; };
+		A0C3D478264A997F0071DB05 /* JWT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWT.swift; sourceTree = "<group>"; };
+		A0C3D479264A997F0071DB05 /* JWTError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTError.swift; sourceTree = "<group>"; };
+		A0C3D47A264A997F0071DB05 /* RSAAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSAAlgorithm.swift; sourceTree = "<group>"; };
+		A0C3D47B264A997F0071DB05 /* ValidateClaimsResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateClaimsResult.swift; sourceTree = "<group>"; };
+		A0C3D47C264A997F0071DB05 /* Data+Base64URLEncoded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Base64URLEncoded.swift"; sourceTree = "<group>"; };
+		A0C3D47D264A997F0071DB05 /* CybsFlexJWTClaims.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CybsFlexJWTClaims.swift; sourceTree = "<group>"; };
+		A0C3D47E264A997F0071DB05 /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		A0C3D47F264A997F0071DB05 /* VerifierAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifierAlgorithm.swift; sourceTree = "<group>"; };
+		A0C3D480264A997F0071DB05 /* JWTDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTDecoder.swift; sourceTree = "<group>"; };
+		A0C3D481264A997F0071DB05 /* NoneAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoneAlgorithm.swift; sourceTree = "<group>"; };
+		A0C3D484264A997F0071DB05 /* CybsAesGcm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CybsAesGcm.m; sourceTree = "<group>"; };
+		A0C3D485264A997F0071DB05 /* CybsAGCipheredData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CybsAGCipheredData.h; sourceTree = "<group>"; };
+		A0C3D486264A997F0071DB05 /* CybsAGError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CybsAGError.m; sourceTree = "<group>"; };
+		A0C3D487264A997F0071DB05 /* IAGCipheredData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAGCipheredData.h; sourceTree = "<group>"; };
+		A0C3D488264A997F0071DB05 /* CybsAGCipheredData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CybsAGCipheredData.m; sourceTree = "<group>"; };
+		A0C3D48A264A997F0071DB05 /* CybsAGAesComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CybsAGAesComponents.m; sourceTree = "<group>"; };
+		A0C3D48B264A997F0071DB05 /* CybsAGGcmMathComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CybsAGGcmMathComponents.m; sourceTree = "<group>"; };
+		A0C3D48C264A997F0071DB05 /* CybsAGBitwiseComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CybsAGBitwiseComponents.m; sourceTree = "<group>"; };
+		A0C3D48D264A997F0071DB05 /* CybsAGGcmEndianness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CybsAGGcmEndianness.h; sourceTree = "<group>"; };
+		A0C3D48E264A997F0071DB05 /* CybsAGTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CybsAGTypes.h; sourceTree = "<group>"; };
+		A0C3D48F264A997F0071DB05 /* CybsAGAesComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CybsAGAesComponents.h; sourceTree = "<group>"; };
+		A0C3D490264A997F0071DB05 /* CybsAGBitwiseComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CybsAGBitwiseComponents.h; sourceTree = "<group>"; };
+		A0C3D492264A997F0071DB05 /* CybsAGGcmEndianness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CybsAGGcmEndianness.m; sourceTree = "<group>"; };
+		A0C3D493264A997F0071DB05 /* CybsAGGcmMathComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CybsAGGcmMathComponents.h; sourceTree = "<group>"; };
+		A0C3D494264A997F0071DB05 /* CybsAesGcm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CybsAesGcm.h; sourceTree = "<group>"; };
+		A0C3D495264A997F0071DB05 /* CybsAGError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CybsAGError.h; sourceTree = "<group>"; };
+		A0C3D498264A997F0071DB05 /* KeyManagementMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyManagementMode.swift; sourceTree = "<group>"; };
+		A0C3D499264A99800071DB05 /* Encrypter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encrypter.swift; sourceTree = "<group>"; };
+		A0C3D49A264A99800071DB05 /* ContentEncryption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentEncryption.swift; sourceTree = "<group>"; };
+		A0C3D49B264A99800071DB05 /* Compressor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Compressor.swift; sourceTree = "<group>"; };
+		A0C3D49C264A99800071DB05 /* AESGCMEncryption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AESGCMEncryption.swift; sourceTree = "<group>"; };
+		A0C3D49D264A99800071DB05 /* JWE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWE.swift; sourceTree = "<group>"; };
+		A0C3D49F264A99800071DB05 /* RSA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSA.swift; sourceTree = "<group>"; };
+		A0C3D4A0264A99800071DB05 /* DataConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataConvertible.swift; sourceTree = "<group>"; };
+		A0C3D4A1264A99800071DB05 /* AlgorithmExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlgorithmExtensions.swift; sourceTree = "<group>"; };
+		A0C3D4A2264A99800071DB05 /* JWESwiftError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWESwiftError.swift; sourceTree = "<group>"; };
+		A0C3D4A3264A99800071DB05 /* DataExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
+		A0C3D4A4264A99800071DB05 /* SecureRandom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureRandom.swift; sourceTree = "<group>"; };
+		A0C3D4A5264A99800071DB05 /* AESGCM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AESGCM.swift; sourceTree = "<group>"; };
+		A0C3D4A6264A99800071DB05 /* JWECommonHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWECommonHeader.swift; sourceTree = "<group>"; };
+		A0C3D4A7264A99800071DB05 /* Algorithms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Algorithms.swift; sourceTree = "<group>"; };
+		A0C3D4A8264A99800071DB05 /* Payload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
+		A0C3D4A9264A99800071DB05 /* AESEncryption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AESEncryption.swift; sourceTree = "<group>"; };
+		A0C3D4AA264A99800071DB05 /* Serializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serializer.swift; sourceTree = "<group>"; };
+		A0C3D4AB264A99800071DB05 /* RSAKeyEncryption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSAKeyEncryption.swift; sourceTree = "<group>"; };
+		A0C3D4AC264A99800071DB05 /* JWEHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWEHeader.swift; sourceTree = "<group>"; };
+		A0C3D4C2264A99800071DB05 /* FlexTokensGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexTokensGenerator.swift; sourceTree = "<group>"; };
+		A0C3D4C3264A99800071DB05 /* CaptureContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureContext.swift; sourceTree = "<group>"; };
+		A0C3D4C4264A99800071DB05 /* HttpResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpResponse.swift; sourceTree = "<group>"; };
+		A0C3D52E264A99900071DB05 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		A0C3D52F264A99900071DB05 /* FlexServiceEndToEndTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexServiceEndToEndTest.swift; sourceTree = "<group>"; };
+		A0C3D530264A99900071DB05 /* rsa_public_key */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_public_key; sourceTree = "<group>"; };
+		A0C3D532264A99900071DB05 /* FlexServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexServiceTests.swift; sourceTree = "<group>"; };
+		A0C3D533264A99910071DB05 /* RemoteFlexTokensGeneratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteFlexTokensGeneratorTests.swift; sourceTree = "<group>"; };
+		A0C3D534264A99910071DB05 /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
+		A0C3D538264A99910071DB05 /* JWTTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTTests.swift; sourceTree = "<group>"; };
+		A0C3D53A264A99910071DB05 /* CybsCipheredDataTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CybsCipheredDataTest.m; sourceTree = "<group>"; };
+		A0C3D53B264A99910071DB05 /* AesGcmTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AesGcmTest.m; sourceTree = "<group>"; };
+		A0C3D53C264A99910071DB05 /* CybersourceFlexSDKTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CybersourceFlexSDKTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		A0C3D53E264A99910071DB05 /* NSData+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+HexString.m"; sourceTree = "<group>"; };
+		A0C3D53F264A99910071DB05 /* NSData+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+HexString.h"; sourceTree = "<group>"; };
+		A0C3D541264A99910071DB05 /* JWEHeaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWEHeaderTests.swift; sourceTree = "<group>"; };
+		A0C3D543264A99910071DB05 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
+		A0C3D544264A99910071DB05 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
+		A0EF577D264BF9F10082BE26 /* JWERSATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWERSATests.swift; sourceTree = "<group>"; };
+		A0EF5782264BFA580082BE26 /* RSACryptoTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSACryptoTestCase.swift; sourceTree = "<group>"; };
+		A0EF5786264BFA790082BE26 /* CryptoTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTestCase.swift; sourceTree = "<group>"; };
+		A0EF578C264BFC250082BE26 /* TestKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TestKeys.plist; sourceTree = "<group>"; };
+		A0EF5798264C00400082BE26 /* RSAKeyManagementModeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSAKeyManagementModeTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0C3D431264A991F0071DB05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0C3D43A264A991F0071DB05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0C3D43E264A991F0071DB05 /* flex_api_ios_sdk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0C3D42A264A991F0071DB05 = {
+			isa = PBXGroup;
+			children = (
+				A0C3D436264A991F0071DB05 /* flex-api-ios-sdk */,
+				A0C3D441264A991F0071DB05 /* flex-api-ios-sdkTests */,
+				A0C3D435264A991F0071DB05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0C3D435264A991F0071DB05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0C3D434264A991F0071DB05 /* flex_api_ios_sdk.framework */,
+				A0C3D43D264A991F0071DB05 /* flex-api-ios-sdkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0C3D436264A991F0071DB05 /* flex-api-ios-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				A0C3D437264A991F0071DB05 /* flex-api-ios-sdk.h */,
+				A0C3D45F264A997F0071DB05 /* DigestHelper.swift */,
+				A0C3D472264A997F0071DB05 /* FlexErrorResponse.swift */,
+				A0C3D45C264A997F0071DB05 /* FlexInternalErrors.swift */,
+				A0C3D45D264A997F0071DB05 /* FlexService.swift */,
+				A0C3D452264A997F0071DB05 /* FlexTokens API */,
+				A0C3D4C1264A99800071DB05 /* FlexTokens Feature */,
+				A0C3D461264A997F0071DB05 /* Internal */,
+				A0C3D450264A997F0071DB05 /* ProjectModule */,
+				A0C3D473264A997F0071DB05 /* Shared */,
+				A0C3D45A264A997F0071DB05 /* Tools.swift */,
+				A0C3D45B264A997F0071DB05 /* TransientToken.swift */,
+				A0C3D438264A991F0071DB05 /* Info.plist */,
+			);
+			path = "flex-api-ios-sdk";
+			sourceTree = "<group>";
+		};
+		A0C3D441264A991F0071DB05 /* flex-api-ios-sdkTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0C3D52F264A99900071DB05 /* FlexServiceEndToEndTest.swift */,
+				A0C3D532264A99900071DB05 /* FlexServiceTests.swift */,
+				A0C3D533264A99910071DB05 /* RemoteFlexTokensGeneratorTests.swift */,
+				A0C3D534264A99910071DB05 /* URLSessionHTTPClientTests.swift */,
+				A0C3D530264A99900071DB05 /* rsa_public_key */,
+				A0C3D542264A99910071DB05 /* Helpers */,
+				A0C3D52D264A99900071DB05 /* ProjectModule */,
+				A0C3D536264A99910071DB05 /* Shared */,
+				A0C3D444264A991F0071DB05 /* Info.plist */,
+			);
+			path = "flex-api-ios-sdkTests";
+			sourceTree = "<group>";
+		};
+		A0C3D450264A997F0071DB05 /* ProjectModule */ = {
+			isa = PBXGroup;
+			children = (
+				A0C3D451264A997F0071DB05 /* module.modulemap */,
+			);
+			path = ProjectModule;
+			sourceTree = "<group>";
+		};
+		A0C3D452264A997F0071DB05 /* FlexTokens API */ = {
+			isa = PBXGroup;
+			children = (
+				A0C3D453264A997F0071DB05 /* Constants.swift */,
+				A0C3D454264A997F0071DB05 /* RemoteFlexToken.swift */,
+				A0C3D455264A997F0071DB05 /* FlexRequest.swift */,
+				A0C3D456264A997F0071DB05 /* URLSessionHTTPClient.swift */,
+				A0C3D457264A997F0071DB05 /* RemoteFlexTokenMapper.swift */,
+				A0C3D458264A997F0071DB05 /* HTTPClient.swift */,
+				A0C3D459264A997F0071DB05 /* RemoteFlexTokensGenerator.swift */,
+			);
+			path = "FlexTokens API";
+			sourceTree = "<group>";
+		};
+		A0C3D461264A997F0071DB05 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				A0C3D462264A997F0071DB05 /* RSAUtilities.swift */,
+				A0C3D463264A997F0071DB05 /* RSA */,
+				A0C3D46D264A997F0071DB05 /* CryptoUtils.swift */,
+				A0C3D46F264A997F0071DB05 /* FlexServiceProtocol.swift */,
+				A0C3D470264A997F0071DB05 /* LongTermKey.swift */,
+				A0C3D471264A997F0071DB05 /* CaptureContextImpl.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		A0C3D463264A997F0071DB05 /* RSA */ = {
+			isa = PBXGroup;
+			children = (
+				A0C3D464264A997F0071DB05 /* Base64.h */,
+				A0C3D465264A997F0071DB05 /* RSAUtils.h */,
+				A0C3D466264A997F0071DB05 /* Base64.m */,
+				A0C3D467264A997F0071DB05 /* keys */,
+				A0C3D46C264A997F0071DB05 /* RSAUtils.m */,
+			);
+			path = RSA;
+			sourceTree = "<group>";
+		};
+		A0C3D467264A997F0071DB05 /* keys */ = {
+			isa = PBXGroup;
+			children = (
+				A0C3D468264A997F0071DB05 /* zu.txt */,
+				A0C3D469264A997F0071DB05 /* ln.txt */,
+				A0C3D46A264A997F0071DB05 /* wf.txt */,
+				A0C3D46B264A997F0071DB05 /* 3g.txt */,
+			);
+			path = keys;
+			sourceTree = "<group>";
+		};
+		A0C3D473264A997F0071DB05 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A0C3D474264A997F0071DB05 /* JWT */,
+				A0C3D482264A997F0071DB05 /* AesGcm */,
+				A0C3D497264A997F0071DB05 /* JWE */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A0C3D474264A997F0071DB05 /* JWT */ = {
+			isa = PBXGroup;
+			children = (
+				A0C3D475264A997F0071DB05 /* Claims.swift */,
+				A0C3D476264A997F0071DB05 /* RSAKeyType.swift */,
+				A0C3D477264A997F0071DB05 /* JWTVerifier.swift */,
+				A0C3D478264A997F0071DB05 /* JWT.swift */,
+				A0C3D479264A997F0071DB05 /* JWTError.swift */,
+				A0C3D47A264A997F0071DB05 /* RSAAlgorithm.swift */,
+				A0C3D47B264A997F0071DB05 /* ValidateClaimsResult.swift */,
+				A0C3D47C264A997F0071DB05 /* Data+Base64URLEncoded.swift */,
+				A0C3D47D264A997F0071DB05 /* CybsFlexJWTClaims.swift */,
+				A0C3D47E264A997F0071DB05 /* Header.swift */,
+				A0C3D47F264A997F0071DB05 /* VerifierAlgorithm.swift */,
+				A0C3D480264A997F0071DB05 /* JWTDecoder.swift */,
+				A0C3D481264A997F0071DB05 /* NoneAlgorithm.swift */,
+			);
+			path = JWT;
+			sourceTree = "<group>";
+		};
+		A0C3D482264A997F0071DB05 /* AesGcm */ = {
+			isa = PBXGroup;
+			children = (
+				A0C3D483264A997F0071DB05 /* Classes */,
+			);
+			path = AesGcm;
+			sourceTree = "<group>";
+		};
+		A0C3D483264A997F0071DB05 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A0C3D484264A997F0071DB05 /* CybsAesGcm.m */,
+				A0C3D485264A997F0071DB05 /* CybsAGCipheredData.h */,
+				A0C3D486264A997F0071DB05 /* CybsAGError.m */,
+				A0C3D487264A997F0071DB05 /* IAGCipheredData.h */,
+				A0C3D488264A997F0071DB05 /* CybsAGCipheredData.m */,
+				A0C3D489264A997F0071DB05 /* Components */,
+				A0C3D494264A997F0071DB05 /* CybsAesGcm.h */,
+				A0C3D495264A997F0071DB05 /* CybsAGError.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A0C3D489264A997F0071DB05 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A0C3D48A264A997F0071DB05 /* CybsAGAesComponents.m */,
+				A0C3D48B264A997F0071DB05 /* CybsAGGcmMathComponents.m */,
+				A0C3D48C264A997F0071DB05 /* CybsAGBitwiseComponents.m */,
+				A0C3D48D264A997F0071DB05 /* CybsAGGcmEndianness.h */,
+				A0C3D48E264A997F0071DB05 /* CybsAGTypes.h */,
+				A0C3D48F264A997F0071DB05 /* CybsAGAesComponents.h */,
+				A0C3D490264A997F0071DB05 /* CybsAGBitwiseComponents.h */,
+				A0C3D492264A997F0071DB05 /* CybsAGGcmEndianness.m */,
+				A0C3D493264A997F0071DB05 /* CybsAGGcmMathComponents.h */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A0C3D497264A997F0071DB05 /* JWE */ = {
+			isa = PBXGroup;
+			children = (
+				A0C3D498264A997F0071DB05 /* KeyManagementMode.swift */,
+				A0C3D499264A99800071DB05 /* Encrypter.swift */,
+				A0C3D49A264A99800071DB05 /* ContentEncryption.swift */,
+				A0C3D49B264A99800071DB05 /* Compressor.swift */,
+				A0C3D49C264A99800071DB05 /* AESGCMEncryption.swift */,
+				A0C3D49D264A99800071DB05 /* JWE.swift */,
+				A0C3D49E264A99800071DB05 /* Common */,
+				A0C3D4AB264A99800071DB05 /* RSAKeyEncryption.swift */,
+				A0C3D4AC264A99800071DB05 /* JWEHeader.swift */,
+			);
+			path = JWE;
+			sourceTree = "<group>";
+		};
+		A0C3D49E264A99800071DB05 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A0C3D49F264A99800071DB05 /* RSA.swift */,
+				A0C3D4A0264A99800071DB05 /* DataConvertible.swift */,
+				A0C3D4A1264A99800071DB05 /* AlgorithmExtensions.swift */,
+				A0C3D4A2264A99800071DB05 /* JWESwiftError.swift */,
+				A0C3D4A3264A99800071DB05 /* DataExtensions.swift */,
+				A0C3D4A4264A99800071DB05 /* SecureRandom.swift */,
+				A0C3D4A5264A99800071DB05 /* AESGCM.swift */,
+				A0C3D4A6264A99800071DB05 /* JWECommonHeader.swift */,
+				A0C3D4A7264A99800071DB05 /* Algorithms.swift */,
+				A0C3D4A8264A99800071DB05 /* Payload.swift */,
+				A0C3D4A9264A99800071DB05 /* AESEncryption.swift */,
+				A0C3D4AA264A99800071DB05 /* Serializer.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A0C3D4C1264A99800071DB05 /* FlexTokens Feature */ = {
+			isa = PBXGroup;
+			children = (
+				A0C3D4C2264A99800071DB05 /* FlexTokensGenerator.swift */,
+				A0C3D4C3264A99800071DB05 /* CaptureContext.swift */,
+				A0C3D4C4264A99800071DB05 /* HttpResponse.swift */,
+			);
+			path = "FlexTokens Feature";
+			sourceTree = "<group>";
+		};
+		A0C3D52D264A99900071DB05 /* ProjectModule */ = {
+			isa = PBXGroup;
+			children = (
+				A0C3D52E264A99900071DB05 /* module.modulemap */,
+			);
+			path = ProjectModule;
+			sourceTree = "<group>";
+		};
+		A0C3D536264A99910071DB05 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A0C3D537264A99910071DB05 /* JWT */,
+				A0C3D539264A99910071DB05 /* AesGcm */,
+				A0C3D540264A99910071DB05 /* JWE */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A0C3D537264A99910071DB05 /* JWT */ = {
+			isa = PBXGroup;
+			children = (
+				A0C3D538264A99910071DB05 /* JWTTests.swift */,
+			);
+			path = JWT;
+			sourceTree = "<group>";
+		};
+		A0C3D539264A99910071DB05 /* AesGcm */ = {
+			isa = PBXGroup;
+			children = (
+				A0C3D53A264A99910071DB05 /* CybsCipheredDataTest.m */,
+				A0C3D53B264A99910071DB05 /* AesGcmTest.m */,
+				A0C3D53C264A99910071DB05 /* CybersourceFlexSDKTests-Bridging-Header.h */,
+				A0C3D53D264A99910071DB05 /* Categories */,
+			);
+			path = AesGcm;
+			sourceTree = "<group>";
+		};
+		A0C3D53D264A99910071DB05 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A0C3D53E264A99910071DB05 /* NSData+HexString.m */,
+				A0C3D53F264A99910071DB05 /* NSData+HexString.h */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		A0C3D540264A99910071DB05 /* JWE */ = {
+			isa = PBXGroup;
+			children = (
+				A0C3D541264A99910071DB05 /* JWEHeaderTests.swift */,
+				A0EF577D264BF9F10082BE26 /* JWERSATests.swift */,
+				A0EF5798264C00400082BE26 /* RSAKeyManagementModeTests.swift */,
+				A0EF5781264BFA440082BE26 /* Helpers */,
+			);
+			path = JWE;
+			sourceTree = "<group>";
+		};
+		A0C3D542264A99910071DB05 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A0C3D543264A99910071DB05 /* SharedTestHelpers.swift */,
+				A0C3D544264A99910071DB05 /* XCTestCase+MemoryLeakTracking.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A0EF5781264BFA440082BE26 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A0EF578C264BFC250082BE26 /* TestKeys.plist */,
+				A0EF5782264BFA580082BE26 /* RSACryptoTestCase.swift */,
+				A0EF5786264BFA790082BE26 /* CryptoTestCase.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A0C3D42F264A991F0071DB05 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0C3D445264A991F0071DB05 /* flex-api-ios-sdk.h in Headers */,
+				A0C3D4F2264A99800071DB05 /* IAGCipheredData.h in Headers */,
+				A0C3D4F0264A99800071DB05 /* CybsAGCipheredData.h in Headers */,
+				A0C3D4F9264A99800071DB05 /* CybsAGAesComponents.h in Headers */,
+				A0C3D4FA264A99800071DB05 /* CybsAGBitwiseComponents.h in Headers */,
+				A0C3D4F8264A99800071DB05 /* CybsAGTypes.h in Headers */,
+				A0C3D4F7264A99800071DB05 /* CybsAGGcmEndianness.h in Headers */,
+				A0C3D4FE264A99800071DB05 /* CybsAesGcm.h in Headers */,
+				A0C3D4D5264A99800071DB05 /* RSAUtils.h in Headers */,
+				A0C3D4D4264A99800071DB05 /* Base64.h in Headers */,
+				A0C3D4FF264A99800071DB05 /* CybsAGError.h in Headers */,
+				A0C3D4FD264A99800071DB05 /* CybsAGGcmMathComponents.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A0C3D433264A991F0071DB05 /* flex-api-ios-sdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0C3D448264A991F0071DB05 /* Build configuration list for PBXNativeTarget "flex-api-ios-sdk" */;
+			buildPhases = (
+				A0C3D42F264A991F0071DB05 /* Headers */,
+				A0C3D430264A991F0071DB05 /* Sources */,
+				A0C3D431264A991F0071DB05 /* Frameworks */,
+				A0C3D432264A991F0071DB05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "flex-api-ios-sdk";
+			productName = CybersourceFlexSDK;
+			productReference = A0C3D434264A991F0071DB05 /* flex_api_ios_sdk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A0C3D43C264A991F0071DB05 /* flex-api-ios-sdkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0C3D44B264A991F0071DB05 /* Build configuration list for PBXNativeTarget "flex-api-ios-sdkTests" */;
+			buildPhases = (
+				A0C3D439264A991F0071DB05 /* Sources */,
+				A0C3D43A264A991F0071DB05 /* Frameworks */,
+				A0C3D43B264A991F0071DB05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0C3D440264A991F0071DB05 /* PBXTargetDependency */,
+			);
+			name = "flex-api-ios-sdkTests";
+			productName = CybersourceFlexSDKTests;
+			productReference = A0C3D43D264A991F0071DB05 /* flex-api-ios-sdkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0C3D42B264A991F0071DB05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					A0C3D433264A991F0071DB05 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					A0C3D43C264A991F0071DB05 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = A0C3D42E264A991F0071DB05 /* Build configuration list for PBXProject "flex-api-ios-sdk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0C3D42A264A991F0071DB05;
+			productRefGroup = A0C3D435264A991F0071DB05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0C3D433264A991F0071DB05 /* flex-api-ios-sdk */,
+				A0C3D43C264A991F0071DB05 /* flex-api-ios-sdkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0C3D432264A991F0071DB05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0C3D4DA264A99800071DB05 /* 3g.txt in Resources */,
+				A0C3D4D9264A99800071DB05 /* wf.txt in Resources */,
+				A0C3D4D8264A99800071DB05 /* ln.txt in Resources */,
+				A0C3D4D7264A99800071DB05 /* zu.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0C3D43B264A991F0071DB05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0EF578D264BFC250082BE26 /* TestKeys.plist in Resources */,
+				A0C3D547264A99910071DB05 /* rsa_public_key in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0C3D430264A991F0071DB05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0C3D4C9264A99800071DB05 /* RemoteFlexTokenMapper.swift in Sources */,
+				A0C3D4EA264A99800071DB05 /* CybsFlexJWTClaims.swift in Sources */,
+				A0C3D4F6264A99800071DB05 /* CybsAGBitwiseComponents.m in Sources */,
+				A0C3D502264A99800071DB05 /* Encrypter.swift in Sources */,
+				A0C3D4D6264A99800071DB05 /* Base64.m in Sources */,
+				A0C3D4E4264A99800071DB05 /* JWTVerifier.swift in Sources */,
+				A0C3D4F5264A99800071DB05 /* CybsAGGcmMathComponents.m in Sources */,
+				A0C3D507264A99800071DB05 /* RSA.swift in Sources */,
+				A0C3D505264A99800071DB05 /* AESGCMEncryption.swift in Sources */,
+				A0C3D4C6264A99800071DB05 /* RemoteFlexToken.swift in Sources */,
+				A0C3D4CB264A99800071DB05 /* RemoteFlexTokensGenerator.swift in Sources */,
+				A0C3D529264A99800071DB05 /* HttpResponse.swift in Sources */,
+				A0C3D4CA264A99800071DB05 /* HTTPClient.swift in Sources */,
+				A0C3D4C7264A99800071DB05 /* FlexRequest.swift in Sources */,
+				A0C3D4E1264A99800071DB05 /* FlexErrorResponse.swift in Sources */,
+				A0C3D501264A99800071DB05 /* KeyManagementMode.swift in Sources */,
+				A0C3D4FC264A99800071DB05 /* CybsAGGcmEndianness.m in Sources */,
+				A0C3D4D1264A99800071DB05 /* DigestHelper.swift in Sources */,
+				A0C3D510264A99800071DB05 /* Payload.swift in Sources */,
+				A0C3D4CF264A99800071DB05 /* FlexService.swift in Sources */,
+				A0C3D4E8264A99800071DB05 /* ValidateClaimsResult.swift in Sources */,
+				A0C3D4E7264A99800071DB05 /* RSAAlgorithm.swift in Sources */,
+				A0C3D506264A99800071DB05 /* JWE.swift in Sources */,
+				A0C3D4DE264A99800071DB05 /* FlexServiceProtocol.swift in Sources */,
+				A0C3D50B264A99800071DB05 /* DataExtensions.swift in Sources */,
+				A0C3D514264A99800071DB05 /* JWEHeader.swift in Sources */,
+				A0C3D4E2264A99800071DB05 /* Claims.swift in Sources */,
+				A0C3D4DF264A99800071DB05 /* LongTermKey.swift in Sources */,
+				A0C3D4F3264A99800071DB05 /* CybsAGCipheredData.m in Sources */,
+				A0C3D513264A99800071DB05 /* RSAKeyEncryption.swift in Sources */,
+				A0C3D4EB264A99800071DB05 /* Header.swift in Sources */,
+				A0C3D4E5264A99800071DB05 /* JWT.swift in Sources */,
+				A0C3D4C5264A99800071DB05 /* Constants.swift in Sources */,
+				A0C3D511264A99800071DB05 /* AESEncryption.swift in Sources */,
+				A0C3D4C8264A99800071DB05 /* URLSessionHTTPClient.swift in Sources */,
+				A0C3D50F264A99800071DB05 /* Algorithms.swift in Sources */,
+				A0C3D50D264A99800071DB05 /* AESGCM.swift in Sources */,
+				A0C3D508264A99800071DB05 /* DataConvertible.swift in Sources */,
+				A0C3D509264A99800071DB05 /* AlgorithmExtensions.swift in Sources */,
+				A0C3D527264A99800071DB05 /* FlexTokensGenerator.swift in Sources */,
+				A0C3D503264A99800071DB05 /* ContentEncryption.swift in Sources */,
+				A0C3D4EC264A99800071DB05 /* VerifierAlgorithm.swift in Sources */,
+				A0C3D50E264A99800071DB05 /* JWECommonHeader.swift in Sources */,
+				A0C3D4F1264A99800071DB05 /* CybsAGError.m in Sources */,
+				A0C3D4EE264A99800071DB05 /* NoneAlgorithm.swift in Sources */,
+				A0C3D4CD264A99800071DB05 /* TransientToken.swift in Sources */,
+				A0C3D4E6264A99800071DB05 /* JWTError.swift in Sources */,
+				A0C3D4CE264A99800071DB05 /* FlexInternalErrors.swift in Sources */,
+				A0C3D50A264A99800071DB05 /* JWESwiftError.swift in Sources */,
+				A0C3D4DC264A99800071DB05 /* CryptoUtils.swift in Sources */,
+				A0C3D4E9264A99800071DB05 /* Data+Base64URLEncoded.swift in Sources */,
+				A0C3D50C264A99800071DB05 /* SecureRandom.swift in Sources */,
+				A0C3D4E0264A99800071DB05 /* CaptureContextImpl.swift in Sources */,
+				A0C3D4DB264A99800071DB05 /* RSAUtils.m in Sources */,
+				A0C3D504264A99800071DB05 /* Compressor.swift in Sources */,
+				A0C3D4E3264A99800071DB05 /* RSAKeyType.swift in Sources */,
+				A0C3D4D3264A99800071DB05 /* RSAUtilities.swift in Sources */,
+				A0C3D4EF264A99800071DB05 /* CybsAesGcm.m in Sources */,
+				A0C3D512264A99800071DB05 /* Serializer.swift in Sources */,
+				A0C3D528264A99800071DB05 /* CaptureContext.swift in Sources */,
+				A0C3D4CC264A99800071DB05 /* Tools.swift in Sources */,
+				A0C3D4ED264A99800071DB05 /* JWTDecoder.swift in Sources */,
+				A0C3D4F4264A99800071DB05 /* CybsAGAesComponents.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0C3D439264A991F0071DB05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0C3D54E264A99920071DB05 /* CybsCipheredDataTest.m in Sources */,
+				A0C3D549264A99920071DB05 /* FlexServiceTests.swift in Sources */,
+				A0EF5787264BFA790082BE26 /* CryptoTestCase.swift in Sources */,
+				A0C3D54D264A99920071DB05 /* JWTTests.swift in Sources */,
+				A0C3D553264A99920071DB05 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				A0EF5783264BFA580082BE26 /* RSACryptoTestCase.swift in Sources */,
+				A0C3D54B264A99920071DB05 /* URLSessionHTTPClientTests.swift in Sources */,
+				A0C3D552264A99920071DB05 /* SharedTestHelpers.swift in Sources */,
+				A0C3D546264A99910071DB05 /* FlexServiceEndToEndTest.swift in Sources */,
+				A0EF577E264BF9F10082BE26 /* JWERSATests.swift in Sources */,
+				A0C3D54A264A99920071DB05 /* RemoteFlexTokensGeneratorTests.swift in Sources */,
+				A0C3D550264A99920071DB05 /* NSData+HexString.m in Sources */,
+				A0C3D551264A99920071DB05 /* JWEHeaderTests.swift in Sources */,
+				A0EF5799264C00400082BE26 /* RSAKeyManagementModeTests.swift in Sources */,
+				A0C3D54F264A99920071DB05 /* AesGcmTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0C3D440264A991F0071DB05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0C3D433264A991F0071DB05 /* flex-api-ios-sdk */;
+			targetProxy = A0C3D43F264A991F0071DB05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A0C3D446264A991F0071DB05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A0C3D447264A991F0071DB05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A0C3D449264A991F0071DB05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "flex-api-ios-sdk/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.visa.com.flexiossdk;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/flex-api-ios-sdk/ProjectModule";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0C3D44A264A991F0071DB05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "flex-api-ios-sdk/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.visa.com.flexiossdk;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/flex-api-ios-sdk/ProjectModule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A0C3D44C264A991F0071DB05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "flex-api-ios-sdkTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.visa.com.CybersourceFlexSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0C3D44D264A991F0071DB05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "flex-api-ios-sdkTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.visa.com.CybersourceFlexSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0C3D42E264A991F0071DB05 /* Build configuration list for PBXProject "flex-api-ios-sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0C3D446264A991F0071DB05 /* Debug */,
+				A0C3D447264A991F0071DB05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0C3D448264A991F0071DB05 /* Build configuration list for PBXNativeTarget "flex-api-ios-sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0C3D449264A991F0071DB05 /* Debug */,
+				A0C3D44A264A991F0071DB05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0C3D44B264A991F0071DB05 /* Build configuration list for PBXNativeTarget "flex-api-ios-sdkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0C3D44C264A991F0071DB05 /* Debug */,
+				A0C3D44D264A991F0071DB05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0C3D42B264A991F0071DB05 /* Project object */;
+}
