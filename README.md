@@ -13,11 +13,11 @@
     val merchantKey = "<MerchantKey>"
  ```
 
-  ### Manual Installation
+  ### How to run the sample application?
 
-  Include the ```flex-api-ios-sdk.framework``` in the application. In Xcode, select the main project file for the target. In the "General" section of the project's properties, scroll down to "Embedded Binaries", press the plus sign (+), and select the framework.
+  Select  ```flex-client-sdk``` from target list. Keep only ```flex-client-sdk``` and ```CybersourceFlexSDK```,  remove any other schemes from Manage Schemes option.
 
-  Once included, make sure in “Build Settings” tab, in section “Search Paths”, the path to these frameworks are added correctly. 
+  Once selected, run the application. 
 
   ## SDK Usage
 
