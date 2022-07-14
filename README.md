@@ -11,7 +11,7 @@
     visit their website. To integrate Cybersource Flex iOS SDK into your Xcode project using CocoaPods, 
     specify it in your Podfile:
   ```swift
-        pod 'flex-api-ios-sdk'
+    pod 'flex-api-ios-sdk'
   ```
 
   ### Configure merchant details
