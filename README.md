@@ -88,10 +88,3 @@
       }
   }
   ```
-  ## Sample Application
-  We have a sample application which demonstrates the SDK usage:  
-     [Sample App](https://github.com/CyberSource/flex-v2-ios-sample)
-    
-  ## Important note:
-  The generation of the capture context should originate from your payment application server.  As this is a fully authenticated REST api it requires your API credentials which are not secured on a mobile application.  It has been included in this demonstration for the purpose of convenience and to demonstrate an end-to-end payment flow.
-
