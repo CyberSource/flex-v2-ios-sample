@@ -1,0 +1,908 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00B562AAE9FFF87E75B0DBB90085CE96 /* FlexTokensGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD49EC1CFCDF243F66969AA45D361A /* FlexTokensGenerator.swift */; };
+		02A950A49B685ECB7E7E88C484DD452B /* CryptoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CB3BD5E400DE60E641231369BABA12 /* CryptoUtils.swift */; };
+		0494AB414599B02CBFA3B16590522C27 /* module.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = 4F54B824E906F393DA5BFCB3A4B4E10D /* module.modulemap */; };
+		04FFE73BB8A84E8DD5F1C081910EB5A1 /* CaptureContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FCF8263BFE73DC299B68AED4A1CA45 /* CaptureContext.swift */; };
+		051418793F0F59AD64B07316D78187BD /* Encrypter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB2C6F9482509833FEF227FEA306F75 /* Encrypter.swift */; };
+		0B6A9272A1CD1EB7CEC2BC8CCC0362A3 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EA2F17BA48C1BC5BD6F3B3AE4ED375 /* Base64.m */; };
+		1416F348B5112163E2854F586FB69580 /* JWESwiftError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C554294B61B4F227D06C55812EE278C /* JWESwiftError.swift */; };
+		14647C261CFDBD9C8D1EBDF313C2F90D /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7684E58C18C1EDA233DC7D7D6A5B220D /* HTTPClient.swift */; };
+		1BCE46635BB29CA86A35167A679B9FEA /* CybsAGGcmMathComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = DD720E7CBC2FB95F1A0303E5E50166E1 /* CybsAGGcmMathComponents.m */; };
+		1C7A897D93BC5D37A04B89E15894E1C1 /* JWECommonHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1048A667CAFD1B2936D8438CA4F58A /* JWECommonHeader.swift */; };
+		1D7A9317ABD0F9EE1EAC22DBA1297DE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		1D8D7BE99DB318B6D7DAAC9A5F772BE3 /* FlexService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22ECA6FC8FEE716314D1A162B22FD96 /* FlexService.swift */; };
+		1F4BA84EF6DC8E0174D51B4499ECD4C1 /* DigestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6197C5A2A92242B729415AD00A8B920 /* DigestHelper.swift */; };
+		209A477EF8F583EC7D715ECC5561AD2A /* AESGCMEncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69B24E73ACFBFD3D8D2B7D30CCD5430 /* AESGCMEncryption.swift */; };
+		24D83E5FAECB0E97270BAA260F773B4F /* CybsAGGcmEndianness.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E830E6288A84BFD6BBAD696F15DF5A /* CybsAGGcmEndianness.m */; };
+		26CD9DC734A8BDC4E6D51406887C9AC1 /* Compressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D96CDAF88646017F5A0DA91CF000ACD /* Compressor.swift */; };
+		2A2AF895719E05FD16E2C329F720E85F /* RemoteFlexTokenMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24F57C503E05DB20E45FB76A02964A1 /* RemoteFlexTokenMapper.swift */; };
+		2D20E60EAFDADAF0F600A04E6DB4BE81 /* RSAAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9245E238DD070A840F23E4DA1A98673E /* RSAAlgorithm.swift */; };
+		30CE4DD721C0A00EA99AB80A2EF80FB5 /* ContentEncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE281317974561C8577D6AFE88F3BEDE /* ContentEncryption.swift */; };
+		35D30180C6EC7274F6C6ADBD61512F50 /* FlexErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071B835C8225A7084F2062E63FBE9CE8 /* FlexErrorResponse.swift */; };
+		40EA8DEA365CABDC427AF68F12F9F1E1 /* RSAUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FA9B3EA9B5D0F536F66D63D9F4A371B /* RSAUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43188DEF566B38E0E3EB217B76004516 /* Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = F937120FE6505D2A0CCA74FD1109A1F0 /* Base64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44180B22C2389A058C0E3BAB4F7C4DC1 /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C1306CE49C99BC69F2BC4C90BE5E8C /* JWT.swift */; };
+		4592B8780736EB9BBBF00A4F1F9E8F09 /* NoneAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817F6EED0F2BE82331596A264434DFC1 /* NoneAlgorithm.swift */; };
+		45A00BD1081F5ECE445618F347A3A5CE /* RSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996AFE268854E6CAFCF8A99EE67C066 /* RSA.swift */; };
+		49E1EAC43846DEC9E558F41EA53CF23A /* RSAUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75F7C3EA591CC2B41F350D11639A7A5 /* RSAUtilities.swift */; };
+		49FA665120CC527124767EF51C305C0A /* CybsAGTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 35ED788955FA4C0128CF28BC7F0F2CE2 /* CybsAGTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AC7FF48087D53E65F7C772D4A1B122D /* Data+Base64URLEncoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD721A6DAC315297E40B566422ABDF5 /* Data+Base64URLEncoded.swift */; };
+		4D36DCE723CA82B90EB4802B48373B8D /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3794BEE4F294AE566B396582665FF4D4 /* Header.swift */; };
+		507EE1240326C5B539A429F6F6F0135C /* FlexServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ADB7A5648E2373CE9F18E20D34CE99 /* FlexServiceProtocol.swift */; };
+		567BB009EA2EFBE947EB7600CB3E23BF /* CybsAGError.h in Headers */ = {isa = PBXBuildFile; fileRef = C133397D384DD270C6972792888B9B0E /* CybsAGError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A8ACBC77CF5BEC93B2DA23DA574A8A6 /* RemoteFlexToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3B81B95810ECA9DD15D169EB850092 /* RemoteFlexToken.swift */; };
+		5FC28F185D733618F25A059CF603EF0A /* LongTermKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1DBE1D95A8856AE71E6F30A97C4B2 /* LongTermKey.swift */; };
+		6363C2681C0421720255DB6C7FF6603C /* CybsAGError.m in Sources */ = {isa = PBXBuildFile; fileRef = 376C0AAF7DB7A85E0AD30C55468BACEA /* CybsAGError.m */; };
+		6B3AB55CA6FC2F438B89A3C01C96CA0B /* CybsFlexJWTClaims.swift in Sources */ = {isa = PBXBuildFile; fileRef = F428CEC4DC56169701BC8B681B59E1B7 /* CybsFlexJWTClaims.swift */; };
+		6BDC0F5EF29EFA5839DF4A768DF4A6FC /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0AE9B41D4D6AC09BCA9C2908201255 /* HttpResponse.swift */; };
+		74455D6D22B30098F8AE44B6CE6BBDDA /* AlgorithmExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD163CB18E16515543A0682BE29754D6 /* AlgorithmExtensions.swift */; };
+		76B9FE5145616EC414517BCDB1CF5204 /* Claims.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B5D157877DBFA55451276FAC31FEA6 /* Claims.swift */; };
+		807EF6B786E85F3042E0005F2F385134 /* Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D5F45BC40E9F52BA3FD005EFDBF18E /* Serializer.swift */; };
+		8101734921FD948811532A0855BAA16B /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B98FC035FCC9FABB582435ACE6482EE /* Payload.swift */; };
+		827765C9B990F12929E8751B209A14E2 /* JWEHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FF99B5117D6C587A78A081B3B9F594 /* JWEHeader.swift */; };
+		828F92FB40F9EE567BEC69813B9EAAFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		8615599E2B536C0E22873D4217F52C74 /* FlexInternalErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6767E6CA7D5D2883F6304B8BE693F49 /* FlexInternalErrors.swift */; };
+		89E282882A84E3EE742C939001E32088 /* RSAKeyEncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90FC1796C9008D7A37572E7E61D66B /* RSAKeyEncryption.swift */; };
+		94E95B6F50E5EF08371037F2EA39D602 /* VerifierAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AF70507BBA332AA650168539B1CB9A /* VerifierAlgorithm.swift */; };
+		958564BBC9350492E8441A17A13A6B60 /* CybsAGAesComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 872E6B9E045C58BF8087F96DBE57181E /* CybsAGAesComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97297B91BFA5B40562E13F703E9815D9 /* RSAKeyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941EE2EDF4A47C15DD599560278220BD /* RSAKeyType.swift */; };
+		991F7A1DCF31248C8AA96FEE963D8EB9 /* SecureRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BA1BF782CBB6FF52BA1F62883BC9A /* SecureRandom.swift */; };
+		9EBCB5D3A5114069B3C985B2A7A2DD93 /* CybsAGCipheredData.m in Sources */ = {isa = PBXBuildFile; fileRef = F274F989053DF2C6E8E04257B793A227 /* CybsAGCipheredData.m */; };
+		9F171CFD8590A50C8378C24B483BB528 /* CybsAesGcm.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C55D783B94605D25E9D0B21E74513B7 /* CybsAesGcm.m */; };
+		A0CBEDDCE8BB30C36B5258AECC2339D2 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84919EECFB55F1EB899357EF921DE86 /* DataExtensions.swift */; };
+		A0E00308F000E59AAF02AF720AEB3698 /* RemoteFlexTokensGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6000B8CC0E4BE2E14C44DFF8E5DBF9 /* RemoteFlexTokensGenerator.swift */; };
+		A2BD0E760D9D78918668497DBE5D5ABD /* JWTDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6644B733627EF65FDE902B0085489DD7 /* JWTDecoder.swift */; };
+		A5DED56C2D080502B886F8ABC8073F67 /* TransientToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D14E4D6D4E107DFEFF90676961719F0 /* TransientToken.swift */; };
+		A6C412FC2B6E757368019BE3F3FB0A6B /* Algorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B99A37D7E48B7AD9A3E5238E863C135 /* Algorithms.swift */; };
+		ACD8A9BFC0061D6167FA702C58C7D0E4 /* AESEncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90A5337CB36279196329A694088EEDA /* AESEncryption.swift */; };
+		ACE044C3539A913B98E13112F12B171E /* CybsAGGcmEndianness.h in Headers */ = {isa = PBXBuildFile; fileRef = 527532D550E62007773D39FF53618D72 /* CybsAGGcmEndianness.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD64A141971B2AB34369A34838707EAD /* CybsAGGcmMathComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 55E2B8F39F15F32918278FE3E937A931 /* CybsAGGcmMathComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2B3311AB0E59D3ED90CB007B03CF4F4 /* flex-api-ios-sdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BF261DA5967876A884758535299C9FA /* flex-api-ios-sdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B828A503557B26E37108049197AB2B07 /* AESGCM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F36CB6B431868081A3B3979E5DFCDAE /* AESGCM.swift */; };
+		BD250151DFCDB9E49CFADC626B8B763C /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FAE6B87D8B740B823149B908A4B2CD /* Tools.swift */; };
+		C191AECA7012061C1FB05AEF8508B633 /* DataConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5355497522821DAB1F83B30F9CF45C18 /* DataConvertible.swift */; };
+		C65B323CD018E58348648E2A5FA8E9CB /* JWTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F089D59CDE254E80ED49FBD322890A1 /* JWTError.swift */; };
+		C6D03FB5AB7746BEA74485D34B81BB39 /* JWE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760EFD75E0CC6675C1B43116AC8E5646 /* JWE.swift */; };
+		CF3845F231B3EF4B8E33D96DA097A400 /* flex-api-ios-sdk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0AF71957400A767831D291EA7057089 /* flex-api-ios-sdk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF46D4719FF99EDD6FBEFEAEFA1C7D46 /* JWTVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D041ECE39229977261DEA515D034D37E /* JWTVerifier.swift */; };
+		D257175F52CA429B0BB66744AC8373A0 /* flex-api-ios-sdk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA16CCD80FD965831DB05315931F0C1B /* flex-api-ios-sdk-dummy.m */; };
+		D34FD6928E7B2B2335B5F5097988290D /* CybsAGBitwiseComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 853CF5F22E3765270F8AA40C75EEA74C /* CybsAGBitwiseComponents.m */; };
+		D44EA7382063C19BE1AE2F4D87A70810 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CF377E29EFD6E7578820E1F066C57 /* Constants.swift */; };
+		DAD9E1E523EBC08705ABD8D206145F6D /* IAGCipheredData.h in Headers */ = {isa = PBXBuildFile; fileRef = 49CC267F8F5796F2866536D810F2FF9F /* IAGCipheredData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCF6C7756A224CB00C1D51F62252AAD4 /* Pods-flex-v2-ios-sample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A71CD6F394A51285E34901357088E1A /* Pods-flex-v2-ios-sample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2E034D3F3C09DAAD01DFC7DECC82FC3 /* CybsAesGcm.h in Headers */ = {isa = PBXBuildFile; fileRef = 72B97EB17BB40E38941DBED42FD6D0E7 /* CybsAesGcm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E370C3A381BD7E2BE9B11A991C4504A3 /* RSAUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FDAB6AB1DD2B87734179A00DAB3FC26C /* RSAUtils.m */; };
+		E3E1193026D22C41D8F07E45ADFDE961 /* FlexRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4D9B2E3302A134E4C8DA3BE06B45FA /* FlexRequest.swift */; };
+		E4768353200EDF925E6ECB59E0163300 /* Pods-flex-v2-ios-sample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B740470DCD5A46F4D7DC5BD105065B46 /* Pods-flex-v2-ios-sample-dummy.m */; };
+		E4DDAE6839140A81A65AC394E53F7233 /* ValidateClaimsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5223844E048DACF02031F1003DB27115 /* ValidateClaimsResult.swift */; };
+		E63F66A3F4791764771BC18995CA3B6F /* KeyManagementMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0FD0F23050624FA7CEC09456D99D08 /* KeyManagementMode.swift */; };
+		E8CB1E67FB2823CD805186D5E13F19D6 /* CaptureContextImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA342DF93B9C181E232002E349346972 /* CaptureContextImpl.swift */; };
+		E93B353676F6343CC5F372553054278D /* CybsAGBitwiseComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 6346FEEBCA639BF71FF3F70909FEF42F /* CybsAGBitwiseComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFF3C5D34382348DE3BC1BD5A6AD5D07 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D34C7E4D985E3A8FA4B7F43A1CCDFF4 /* URLSessionHTTPClient.swift */; };
+		F3789A56F266A2F26D5807C0614BDEFF /* CybsAGAesComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 2492D880F8212171A475D86F63B90213 /* CybsAGAesComponents.m */; };
+		FA92E8A69A8F5719280263ACAB4C2E95 /* CybsAGCipheredData.h in Headers */ = {isa = PBXBuildFile; fileRef = 078954333B3466A3F9E995FC09014A7F /* CybsAGCipheredData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7585AD895F0EB4470863F40222896F7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BC67ACDAC04FA5820855CB9F538A75E;
+			remoteInfo = "flex-api-ios-sdk";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05DBFE83636826B9C6FEF4F3BDED7A7A /* flex-api-ios-sdk */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "flex-api-ios-sdk"; path = flex_api_ios_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		071B835C8225A7084F2062E63FBE9CE8 /* FlexErrorResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexErrorResponse.swift; path = "flex-api-ios-sdk/FlexErrorResponse.swift"; sourceTree = "<group>"; };
+		078954333B3466A3F9E995FC09014A7F /* CybsAGCipheredData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CybsAGCipheredData.h; path = "flex-api-ios-sdk/Shared/AesGcm/Classes/CybsAGCipheredData.h"; sourceTree = "<group>"; };
+		07B5D157877DBFA55451276FAC31FEA6 /* Claims.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Claims.swift; path = "flex-api-ios-sdk/Shared/JWT/Claims.swift"; sourceTree = "<group>"; };
+		09A1DBE1D95A8856AE71E6F30A97C4B2 /* LongTermKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LongTermKey.swift; path = "flex-api-ios-sdk/Internal/LongTermKey.swift"; sourceTree = "<group>"; };
+		0D96CDAF88646017F5A0DA91CF000ACD /* Compressor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compressor.swift; path = "flex-api-ios-sdk/Shared/JWE/Compressor.swift"; sourceTree = "<group>"; };
+		0EB45FA43147431010983DF8D47F313D /* Pods-flex-v2-ios-sample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-flex-v2-ios-sample.modulemap"; sourceTree = "<group>"; };
+		0FA9B3EA9B5D0F536F66D63D9F4A371B /* RSAUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSAUtils.h; path = "flex-api-ios-sdk/Internal/RSA/RSAUtils.h"; sourceTree = "<group>"; };
+		13C6AC586F40915F3042B45FD043DEFA /* flex-api-ios-sdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "flex-api-ios-sdk.debug.xcconfig"; sourceTree = "<group>"; };
+		19CB3BD5E400DE60E641231369BABA12 /* CryptoUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CryptoUtils.swift; path = "flex-api-ios-sdk/Internal/CryptoUtils.swift"; sourceTree = "<group>"; };
+		1E3B81B95810ECA9DD15D169EB850092 /* RemoteFlexToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteFlexToken.swift; path = "flex-api-ios-sdk/FlexTokens API/RemoteFlexToken.swift"; sourceTree = "<group>"; };
+		1F36CB6B431868081A3B3979E5DFCDAE /* AESGCM.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AESGCM.swift; path = "flex-api-ios-sdk/Shared/JWE/Common/AESGCM.swift"; sourceTree = "<group>"; };
+		20193C1AE87F513D6467C9B95764D573 /* flex-api-ios-sdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "flex-api-ios-sdk.release.xcconfig"; sourceTree = "<group>"; };
+		22099662AA4B3E2208733B647E3E10CC /* Pods-flex-v2-ios-sample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-flex-v2-ios-sample-Info.plist"; sourceTree = "<group>"; };
+		2492D880F8212171A475D86F63B90213 /* CybsAGAesComponents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CybsAGAesComponents.m; path = "flex-api-ios-sdk/Shared/AesGcm/Classes/Components/CybsAGAesComponents.m"; sourceTree = "<group>"; };
+		26E5FF8AC0007C7CCEB6F53B8BAFD5CA /* flex-api-ios-sdk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "flex-api-ios-sdk.modulemap"; sourceTree = "<group>"; };
+		2A0FD0F23050624FA7CEC09456D99D08 /* KeyManagementMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyManagementMode.swift; path = "flex-api-ios-sdk/Shared/JWE/KeyManagementMode.swift"; sourceTree = "<group>"; };
+		35ED788955FA4C0128CF28BC7F0F2CE2 /* CybsAGTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CybsAGTypes.h; path = "flex-api-ios-sdk/Shared/AesGcm/Classes/Components/CybsAGTypes.h"; sourceTree = "<group>"; };
+		376C0AAF7DB7A85E0AD30C55468BACEA /* CybsAGError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CybsAGError.m; path = "flex-api-ios-sdk/Shared/AesGcm/Classes/CybsAGError.m"; sourceTree = "<group>"; };
+		3794BEE4F294AE566B396582665FF4D4 /* Header.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Header.swift; path = "flex-api-ios-sdk/Shared/JWT/Header.swift"; sourceTree = "<group>"; };
+		3A71CD6F394A51285E34901357088E1A /* Pods-flex-v2-ios-sample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-flex-v2-ios-sample-umbrella.h"; sourceTree = "<group>"; };
+		3C55D783B94605D25E9D0B21E74513B7 /* CybsAesGcm.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CybsAesGcm.m; path = "flex-api-ios-sdk/Shared/AesGcm/Classes/CybsAesGcm.m"; sourceTree = "<group>"; };
+		3DD721A6DAC315297E40B566422ABDF5 /* Data+Base64URLEncoded.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Base64URLEncoded.swift"; path = "flex-api-ios-sdk/Shared/JWT/Data+Base64URLEncoded.swift"; sourceTree = "<group>"; };
+		46ADB7A5648E2373CE9F18E20D34CE99 /* FlexServiceProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexServiceProtocol.swift; path = "flex-api-ios-sdk/Internal/FlexServiceProtocol.swift"; sourceTree = "<group>"; };
+		49CC267F8F5796F2866536D810F2FF9F /* IAGCipheredData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IAGCipheredData.h; path = "flex-api-ios-sdk/Shared/AesGcm/Classes/IAGCipheredData.h"; sourceTree = "<group>"; };
+		4BF261DA5967876A884758535299C9FA /* flex-api-ios-sdk.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "flex-api-ios-sdk.h"; path = "flex-api-ios-sdk/flex-api-ios-sdk.h"; sourceTree = "<group>"; };
+		4F089D59CDE254E80ED49FBD322890A1 /* JWTError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWTError.swift; path = "flex-api-ios-sdk/Shared/JWT/JWTError.swift"; sourceTree = "<group>"; };
+		4F54B824E906F393DA5BFCB3A4B4E10D /* module.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = module.modulemap; path = "flex-api-ios-sdk/ProjectModule/module.modulemap"; sourceTree = "<group>"; };
+		5223844E048DACF02031F1003DB27115 /* ValidateClaimsResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidateClaimsResult.swift; path = "flex-api-ios-sdk/Shared/JWT/ValidateClaimsResult.swift"; sourceTree = "<group>"; };
+		527532D550E62007773D39FF53618D72 /* CybsAGGcmEndianness.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CybsAGGcmEndianness.h; path = "flex-api-ios-sdk/Shared/AesGcm/Classes/Components/CybsAGGcmEndianness.h"; sourceTree = "<group>"; };
+		5355497522821DAB1F83B30F9CF45C18 /* DataConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataConvertible.swift; path = "flex-api-ios-sdk/Shared/JWE/Common/DataConvertible.swift"; sourceTree = "<group>"; };
+		55E2B8F39F15F32918278FE3E937A931 /* CybsAGGcmMathComponents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CybsAGGcmMathComponents.h; path = "flex-api-ios-sdk/Shared/AesGcm/Classes/Components/CybsAGGcmMathComponents.h"; sourceTree = "<group>"; };
+		581CF377E29EFD6E7578820E1F066C57 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "flex-api-ios-sdk/FlexTokens API/Constants.swift"; sourceTree = "<group>"; };
+		5B4BA1BF782CBB6FF52BA1F62883BC9A /* SecureRandom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureRandom.swift; path = "flex-api-ios-sdk/Shared/JWE/Common/SecureRandom.swift"; sourceTree = "<group>"; };
+		5F4D9B2E3302A134E4C8DA3BE06B45FA /* FlexRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexRequest.swift; path = "flex-api-ios-sdk/FlexTokens API/FlexRequest.swift"; sourceTree = "<group>"; };
+		6346FEEBCA639BF71FF3F70909FEF42F /* CybsAGBitwiseComponents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CybsAGBitwiseComponents.h; path = "flex-api-ios-sdk/Shared/AesGcm/Classes/Components/CybsAGBitwiseComponents.h"; sourceTree = "<group>"; };
+		6644B733627EF65FDE902B0085489DD7 /* JWTDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWTDecoder.swift; path = "flex-api-ios-sdk/Shared/JWT/JWTDecoder.swift"; sourceTree = "<group>"; };
+		68EA2F17BA48C1BC5BD6F3B3AE4ED375 /* Base64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Base64.m; path = "flex-api-ios-sdk/Internal/RSA/Base64.m"; sourceTree = "<group>"; };
+		6C554294B61B4F227D06C55812EE278C /* JWESwiftError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWESwiftError.swift; path = "flex-api-ios-sdk/Shared/JWE/Common/JWESwiftError.swift"; sourceTree = "<group>"; };
+		6FB2C6F9482509833FEF227FEA306F75 /* Encrypter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Encrypter.swift; path = "flex-api-ios-sdk/Shared/JWE/Encrypter.swift"; sourceTree = "<group>"; };
+		72B97EB17BB40E38941DBED42FD6D0E7 /* CybsAesGcm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CybsAesGcm.h; path = "flex-api-ios-sdk/Shared/AesGcm/Classes/CybsAesGcm.h"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		760EFD75E0CC6675C1B43116AC8E5646 /* JWE.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWE.swift; path = "flex-api-ios-sdk/Shared/JWE/JWE.swift"; sourceTree = "<group>"; };
+		7684E58C18C1EDA233DC7D7D6A5B220D /* HTTPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPClient.swift; path = "flex-api-ios-sdk/FlexTokens API/HTTPClient.swift"; sourceTree = "<group>"; };
+		77FF99B5117D6C587A78A081B3B9F594 /* JWEHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWEHeader.swift; path = "flex-api-ios-sdk/Shared/JWE/JWEHeader.swift"; sourceTree = "<group>"; };
+		7A25A3A75BAE316C9C14F57752AC9664 /* Pods-flex-v2-ios-sample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-flex-v2-ios-sample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7B99A37D7E48B7AD9A3E5238E863C135 /* Algorithms.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Algorithms.swift; path = "flex-api-ios-sdk/Shared/JWE/Common/Algorithms.swift"; sourceTree = "<group>"; };
+		7C1048A667CAFD1B2936D8438CA4F58A /* JWECommonHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWECommonHeader.swift; path = "flex-api-ios-sdk/Shared/JWE/Common/JWECommonHeader.swift"; sourceTree = "<group>"; };
+		7D14E4D6D4E107DFEFF90676961719F0 /* TransientToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransientToken.swift; path = "flex-api-ios-sdk/TransientToken.swift"; sourceTree = "<group>"; };
+		7D6000B8CC0E4BE2E14C44DFF8E5DBF9 /* RemoteFlexTokensGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteFlexTokensGenerator.swift; path = "flex-api-ios-sdk/FlexTokens API/RemoteFlexTokensGenerator.swift"; sourceTree = "<group>"; };
+		817F6EED0F2BE82331596A264434DFC1 /* NoneAlgorithm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NoneAlgorithm.swift; path = "flex-api-ios-sdk/Shared/JWT/NoneAlgorithm.swift"; sourceTree = "<group>"; };
+		853CF5F22E3765270F8AA40C75EEA74C /* CybsAGBitwiseComponents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CybsAGBitwiseComponents.m; path = "flex-api-ios-sdk/Shared/AesGcm/Classes/Components/CybsAGBitwiseComponents.m"; sourceTree = "<group>"; };
+		872E6B9E045C58BF8087F96DBE57181E /* CybsAGAesComponents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CybsAGAesComponents.h; path = "flex-api-ios-sdk/Shared/AesGcm/Classes/Components/CybsAGAesComponents.h"; sourceTree = "<group>"; };
+		88AB825C2C599B93FFFFAE9F6CF03CA8 /* Pods-flex-v2-ios-sample */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-flex-v2-ios-sample"; path = Pods_flex_v2_ios_sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9245E238DD070A840F23E4DA1A98673E /* RSAAlgorithm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSAAlgorithm.swift; path = "flex-api-ios-sdk/Shared/JWT/RSAAlgorithm.swift"; sourceTree = "<group>"; };
+		93AD49EC1CFCDF243F66969AA45D361A /* FlexTokensGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexTokensGenerator.swift; path = "flex-api-ios-sdk/FlexTokens Feature/FlexTokensGenerator.swift"; sourceTree = "<group>"; };
+		941EE2EDF4A47C15DD599560278220BD /* RSAKeyType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSAKeyType.swift; path = "flex-api-ios-sdk/Shared/JWT/RSAKeyType.swift"; sourceTree = "<group>"; };
+		947DCAC3D9D69DDA4BCA5375F97F15C2 /* flex-api-ios-sdk-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "flex-api-ios-sdk-Info.plist"; sourceTree = "<group>"; };
+		96438DCAFBA2F3A6AE9BC734ECDE9919 /* flex-api-ios-sdk-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "flex-api-ios-sdk-prefix.pch"; sourceTree = "<group>"; };
+		96E830E6288A84BFD6BBAD696F15DF5A /* CybsAGGcmEndianness.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CybsAGGcmEndianness.m; path = "flex-api-ios-sdk/Shared/AesGcm/Classes/Components/CybsAGGcmEndianness.m"; sourceTree = "<group>"; };
+		9B98FC035FCC9FABB582435ACE6482EE /* Payload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Payload.swift; path = "flex-api-ios-sdk/Shared/JWE/Common/Payload.swift"; sourceTree = "<group>"; };
+		9D34C7E4D985E3A8FA4B7F43A1CCDFF4 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLSessionHTTPClient.swift; path = "flex-api-ios-sdk/FlexTokens API/URLSessionHTTPClient.swift"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A127272D795A2AA35380F3E61DC8A2E4 /* Pods-flex-v2-ios-sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-flex-v2-ios-sample.release.xcconfig"; sourceTree = "<group>"; };
+		A24F57C503E05DB20E45FB76A02964A1 /* RemoteFlexTokenMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteFlexTokenMapper.swift; path = "flex-api-ios-sdk/FlexTokens API/RemoteFlexTokenMapper.swift"; sourceTree = "<group>"; };
+		A50D793209CF7AC25F593D3048764537 /* Pods-flex-v2-ios-sample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-flex-v2-ios-sample-acknowledgements.plist"; sourceTree = "<group>"; };
+		A75F7C3EA591CC2B41F350D11639A7A5 /* RSAUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSAUtilities.swift; path = "flex-api-ios-sdk/Internal/RSAUtilities.swift"; sourceTree = "<group>"; };
+		A996AFE268854E6CAFCF8A99EE67C066 /* RSA.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSA.swift; path = "flex-api-ios-sdk/Shared/JWE/Common/RSA.swift"; sourceTree = "<group>"; };
+		AD163CB18E16515543A0682BE29754D6 /* AlgorithmExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlgorithmExtensions.swift; path = "flex-api-ios-sdk/Shared/JWE/Common/AlgorithmExtensions.swift"; sourceTree = "<group>"; };
+		B6FCF8263BFE73DC299B68AED4A1CA45 /* CaptureContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaptureContext.swift; path = "flex-api-ios-sdk/FlexTokens Feature/CaptureContext.swift"; sourceTree = "<group>"; };
+		B740470DCD5A46F4D7DC5BD105065B46 /* Pods-flex-v2-ios-sample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-flex-v2-ios-sample-dummy.m"; sourceTree = "<group>"; };
+		B9C1306CE49C99BC69F2BC4C90BE5E8C /* JWT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWT.swift; path = "flex-api-ios-sdk/Shared/JWT/JWT.swift"; sourceTree = "<group>"; };
+		BA342DF93B9C181E232002E349346972 /* CaptureContextImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaptureContextImpl.swift; path = "flex-api-ios-sdk/Internal/CaptureContextImpl.swift"; sourceTree = "<group>"; };
+		BFD2493CD76285F7E825122173E54629 /* Pods-flex-v2-ios-sample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-flex-v2-ios-sample-frameworks.sh"; sourceTree = "<group>"; };
+		C133397D384DD270C6972792888B9B0E /* CybsAGError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CybsAGError.h; path = "flex-api-ios-sdk/Shared/AesGcm/Classes/CybsAGError.h"; sourceTree = "<group>"; };
+		CA16CCD80FD965831DB05315931F0C1B /* flex-api-ios-sdk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "flex-api-ios-sdk-dummy.m"; sourceTree = "<group>"; };
+		D041ECE39229977261DEA515D034D37E /* JWTVerifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWTVerifier.swift; path = "flex-api-ios-sdk/Shared/JWT/JWTVerifier.swift"; sourceTree = "<group>"; };
+		D0AF71957400A767831D291EA7057089 /* flex-api-ios-sdk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "flex-api-ios-sdk-umbrella.h"; sourceTree = "<group>"; };
+		D22ECA6FC8FEE716314D1A162B22FD96 /* FlexService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexService.swift; path = "flex-api-ios-sdk/FlexService.swift"; sourceTree = "<group>"; };
+		D5D5F45BC40E9F52BA3FD005EFDBF18E /* Serializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Serializer.swift; path = "flex-api-ios-sdk/Shared/JWE/Common/Serializer.swift"; sourceTree = "<group>"; };
+		D84919EECFB55F1EB899357EF921DE86 /* DataExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataExtensions.swift; path = "flex-api-ios-sdk/Shared/JWE/Common/DataExtensions.swift"; sourceTree = "<group>"; };
+		DCBB8AE18C2E9A64EFE6B19EDC7324C2 /* Pods-flex-v2-ios-sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-flex-v2-ios-sample.debug.xcconfig"; sourceTree = "<group>"; };
+		DD720E7CBC2FB95F1A0303E5E50166E1 /* CybsAGGcmMathComponents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CybsAGGcmMathComponents.m; path = "flex-api-ios-sdk/Shared/AesGcm/Classes/Components/CybsAGGcmMathComponents.m"; sourceTree = "<group>"; };
+		E6197C5A2A92242B729415AD00A8B920 /* DigestHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DigestHelper.swift; path = "flex-api-ios-sdk/DigestHelper.swift"; sourceTree = "<group>"; };
+		E6767E6CA7D5D2883F6304B8BE693F49 /* FlexInternalErrors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexInternalErrors.swift; path = "flex-api-ios-sdk/FlexInternalErrors.swift"; sourceTree = "<group>"; };
+		E7FAE6B87D8B740B823149B908A4B2CD /* Tools.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tools.swift; path = "flex-api-ios-sdk/Tools.swift"; sourceTree = "<group>"; };
+		E90A5337CB36279196329A694088EEDA /* AESEncryption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AESEncryption.swift; path = "flex-api-ios-sdk/Shared/JWE/Common/AESEncryption.swift"; sourceTree = "<group>"; };
+		F274F989053DF2C6E8E04257B793A227 /* CybsAGCipheredData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CybsAGCipheredData.m; path = "flex-api-ios-sdk/Shared/AesGcm/Classes/CybsAGCipheredData.m"; sourceTree = "<group>"; };
+		F428CEC4DC56169701BC8B681B59E1B7 /* CybsFlexJWTClaims.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CybsFlexJWTClaims.swift; path = "flex-api-ios-sdk/Shared/JWT/CybsFlexJWTClaims.swift"; sourceTree = "<group>"; };
+		F69B24E73ACFBFD3D8D2B7D30CCD5430 /* AESGCMEncryption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AESGCMEncryption.swift; path = "flex-api-ios-sdk/Shared/JWE/AESGCMEncryption.swift"; sourceTree = "<group>"; };
+		F7AF70507BBA332AA650168539B1CB9A /* VerifierAlgorithm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerifierAlgorithm.swift; path = "flex-api-ios-sdk/Shared/JWT/VerifierAlgorithm.swift"; sourceTree = "<group>"; };
+		F937120FE6505D2A0CCA74FD1109A1F0 /* Base64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Base64.h; path = "flex-api-ios-sdk/Internal/RSA/Base64.h"; sourceTree = "<group>"; };
+		FA0AE9B41D4D6AC09BCA9C2908201255 /* HttpResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpResponse.swift; path = "flex-api-ios-sdk/FlexTokens Feature/HttpResponse.swift"; sourceTree = "<group>"; };
+		FDAB6AB1DD2B87734179A00DAB3FC26C /* RSAUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSAUtils.m; path = "flex-api-ios-sdk/Internal/RSA/RSAUtils.m"; sourceTree = "<group>"; };
+		FE281317974561C8577D6AFE88F3BEDE /* ContentEncryption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentEncryption.swift; path = "flex-api-ios-sdk/Shared/JWE/ContentEncryption.swift"; sourceTree = "<group>"; };
+		FF90FC1796C9008D7A37572E7E61D66B /* RSAKeyEncryption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSAKeyEncryption.swift; path = "flex-api-ios-sdk/Shared/JWE/RSAKeyEncryption.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70154CB26B0320106A956AA6F3A0ACFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				828F92FB40F9EE567BEC69813B9EAAFB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78331A375B787FA79D90BBB7A0849612 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D7A9317ABD0F9EE1EAC22DBA1297DE2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19AA1B68C5BDC7303826B35EC1D222C4 /* Pods-flex-v2-ios-sample */ = {
+			isa = PBXGroup;
+			children = (
+				0EB45FA43147431010983DF8D47F313D /* Pods-flex-v2-ios-sample.modulemap */,
+				7A25A3A75BAE316C9C14F57752AC9664 /* Pods-flex-v2-ios-sample-acknowledgements.markdown */,
+				A50D793209CF7AC25F593D3048764537 /* Pods-flex-v2-ios-sample-acknowledgements.plist */,
+				B740470DCD5A46F4D7DC5BD105065B46 /* Pods-flex-v2-ios-sample-dummy.m */,
+				BFD2493CD76285F7E825122173E54629 /* Pods-flex-v2-ios-sample-frameworks.sh */,
+				22099662AA4B3E2208733B647E3E10CC /* Pods-flex-v2-ios-sample-Info.plist */,
+				3A71CD6F394A51285E34901357088E1A /* Pods-flex-v2-ios-sample-umbrella.h */,
+				DCBB8AE18C2E9A64EFE6B19EDC7324C2 /* Pods-flex-v2-ios-sample.debug.xcconfig */,
+				A127272D795A2AA35380F3E61DC8A2E4 /* Pods-flex-v2-ios-sample.release.xcconfig */,
+			);
+			name = "Pods-flex-v2-ios-sample";
+			path = "Target Support Files/Pods-flex-v2-ios-sample";
+			sourceTree = "<group>";
+		};
+		2965F1A2AB6A3925DFD6499AC34A1BDF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93E620F73465082ED5CAAE6A824034E4 /* flex-api-ios-sdk */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		507DF80F74D08BBB9661F143B28DC555 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				19AA1B68C5BDC7303826B35EC1D222C4 /* Pods-flex-v2-ios-sample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		93E620F73465082ED5CAAE6A824034E4 /* flex-api-ios-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				E90A5337CB36279196329A694088EEDA /* AESEncryption.swift */,
+				1F36CB6B431868081A3B3979E5DFCDAE /* AESGCM.swift */,
+				F69B24E73ACFBFD3D8D2B7D30CCD5430 /* AESGCMEncryption.swift */,
+				AD163CB18E16515543A0682BE29754D6 /* AlgorithmExtensions.swift */,
+				7B99A37D7E48B7AD9A3E5238E863C135 /* Algorithms.swift */,
+				F937120FE6505D2A0CCA74FD1109A1F0 /* Base64.h */,
+				68EA2F17BA48C1BC5BD6F3B3AE4ED375 /* Base64.m */,
+				B6FCF8263BFE73DC299B68AED4A1CA45 /* CaptureContext.swift */,
+				BA342DF93B9C181E232002E349346972 /* CaptureContextImpl.swift */,
+				07B5D157877DBFA55451276FAC31FEA6 /* Claims.swift */,
+				0D96CDAF88646017F5A0DA91CF000ACD /* Compressor.swift */,
+				581CF377E29EFD6E7578820E1F066C57 /* Constants.swift */,
+				FE281317974561C8577D6AFE88F3BEDE /* ContentEncryption.swift */,
+				19CB3BD5E400DE60E641231369BABA12 /* CryptoUtils.swift */,
+				72B97EB17BB40E38941DBED42FD6D0E7 /* CybsAesGcm.h */,
+				3C55D783B94605D25E9D0B21E74513B7 /* CybsAesGcm.m */,
+				872E6B9E045C58BF8087F96DBE57181E /* CybsAGAesComponents.h */,
+				2492D880F8212171A475D86F63B90213 /* CybsAGAesComponents.m */,
+				6346FEEBCA639BF71FF3F70909FEF42F /* CybsAGBitwiseComponents.h */,
+				853CF5F22E3765270F8AA40C75EEA74C /* CybsAGBitwiseComponents.m */,
+				078954333B3466A3F9E995FC09014A7F /* CybsAGCipheredData.h */,
+				F274F989053DF2C6E8E04257B793A227 /* CybsAGCipheredData.m */,
+				C133397D384DD270C6972792888B9B0E /* CybsAGError.h */,
+				376C0AAF7DB7A85E0AD30C55468BACEA /* CybsAGError.m */,
+				527532D550E62007773D39FF53618D72 /* CybsAGGcmEndianness.h */,
+				96E830E6288A84BFD6BBAD696F15DF5A /* CybsAGGcmEndianness.m */,
+				55E2B8F39F15F32918278FE3E937A931 /* CybsAGGcmMathComponents.h */,
+				DD720E7CBC2FB95F1A0303E5E50166E1 /* CybsAGGcmMathComponents.m */,
+				35ED788955FA4C0128CF28BC7F0F2CE2 /* CybsAGTypes.h */,
+				F428CEC4DC56169701BC8B681B59E1B7 /* CybsFlexJWTClaims.swift */,
+				3DD721A6DAC315297E40B566422ABDF5 /* Data+Base64URLEncoded.swift */,
+				5355497522821DAB1F83B30F9CF45C18 /* DataConvertible.swift */,
+				D84919EECFB55F1EB899357EF921DE86 /* DataExtensions.swift */,
+				E6197C5A2A92242B729415AD00A8B920 /* DigestHelper.swift */,
+				6FB2C6F9482509833FEF227FEA306F75 /* Encrypter.swift */,
+				4BF261DA5967876A884758535299C9FA /* flex-api-ios-sdk.h */,
+				071B835C8225A7084F2062E63FBE9CE8 /* FlexErrorResponse.swift */,
+				E6767E6CA7D5D2883F6304B8BE693F49 /* FlexInternalErrors.swift */,
+				5F4D9B2E3302A134E4C8DA3BE06B45FA /* FlexRequest.swift */,
+				D22ECA6FC8FEE716314D1A162B22FD96 /* FlexService.swift */,
+				46ADB7A5648E2373CE9F18E20D34CE99 /* FlexServiceProtocol.swift */,
+				93AD49EC1CFCDF243F66969AA45D361A /* FlexTokensGenerator.swift */,
+				3794BEE4F294AE566B396582665FF4D4 /* Header.swift */,
+				7684E58C18C1EDA233DC7D7D6A5B220D /* HTTPClient.swift */,
+				FA0AE9B41D4D6AC09BCA9C2908201255 /* HttpResponse.swift */,
+				49CC267F8F5796F2866536D810F2FF9F /* IAGCipheredData.h */,
+				760EFD75E0CC6675C1B43116AC8E5646 /* JWE.swift */,
+				7C1048A667CAFD1B2936D8438CA4F58A /* JWECommonHeader.swift */,
+				77FF99B5117D6C587A78A081B3B9F594 /* JWEHeader.swift */,
+				6C554294B61B4F227D06C55812EE278C /* JWESwiftError.swift */,
+				B9C1306CE49C99BC69F2BC4C90BE5E8C /* JWT.swift */,
+				6644B733627EF65FDE902B0085489DD7 /* JWTDecoder.swift */,
+				4F089D59CDE254E80ED49FBD322890A1 /* JWTError.swift */,
+				D041ECE39229977261DEA515D034D37E /* JWTVerifier.swift */,
+				2A0FD0F23050624FA7CEC09456D99D08 /* KeyManagementMode.swift */,
+				09A1DBE1D95A8856AE71E6F30A97C4B2 /* LongTermKey.swift */,
+				4F54B824E906F393DA5BFCB3A4B4E10D /* module.modulemap */,
+				817F6EED0F2BE82331596A264434DFC1 /* NoneAlgorithm.swift */,
+				9B98FC035FCC9FABB582435ACE6482EE /* Payload.swift */,
+				1E3B81B95810ECA9DD15D169EB850092 /* RemoteFlexToken.swift */,
+				A24F57C503E05DB20E45FB76A02964A1 /* RemoteFlexTokenMapper.swift */,
+				7D6000B8CC0E4BE2E14C44DFF8E5DBF9 /* RemoteFlexTokensGenerator.swift */,
+				A996AFE268854E6CAFCF8A99EE67C066 /* RSA.swift */,
+				9245E238DD070A840F23E4DA1A98673E /* RSAAlgorithm.swift */,
+				FF90FC1796C9008D7A37572E7E61D66B /* RSAKeyEncryption.swift */,
+				941EE2EDF4A47C15DD599560278220BD /* RSAKeyType.swift */,
+				A75F7C3EA591CC2B41F350D11639A7A5 /* RSAUtilities.swift */,
+				0FA9B3EA9B5D0F536F66D63D9F4A371B /* RSAUtils.h */,
+				FDAB6AB1DD2B87734179A00DAB3FC26C /* RSAUtils.m */,
+				5B4BA1BF782CBB6FF52BA1F62883BC9A /* SecureRandom.swift */,
+				D5D5F45BC40E9F52BA3FD005EFDBF18E /* Serializer.swift */,
+				E7FAE6B87D8B740B823149B908A4B2CD /* Tools.swift */,
+				7D14E4D6D4E107DFEFF90676961719F0 /* TransientToken.swift */,
+				9D34C7E4D985E3A8FA4B7F43A1CCDFF4 /* URLSessionHTTPClient.swift */,
+				5223844E048DACF02031F1003DB27115 /* ValidateClaimsResult.swift */,
+				F7AF70507BBA332AA650168539B1CB9A /* VerifierAlgorithm.swift */,
+				C1FB2268CBC90469E213DAD5B7FD1331 /* Support Files */,
+			);
+			name = "flex-api-ios-sdk";
+			path = "flex-api-ios-sdk";
+			sourceTree = "<group>";
+		};
+		C1FB2268CBC90469E213DAD5B7FD1331 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				26E5FF8AC0007C7CCEB6F53B8BAFD5CA /* flex-api-ios-sdk.modulemap */,
+				CA16CCD80FD965831DB05315931F0C1B /* flex-api-ios-sdk-dummy.m */,
+				947DCAC3D9D69DDA4BCA5375F97F15C2 /* flex-api-ios-sdk-Info.plist */,
+				96438DCAFBA2F3A6AE9BC734ECDE9919 /* flex-api-ios-sdk-prefix.pch */,
+				D0AF71957400A767831D291EA7057089 /* flex-api-ios-sdk-umbrella.h */,
+				13C6AC586F40915F3042B45FD043DEFA /* flex-api-ios-sdk.debug.xcconfig */,
+				20193C1AE87F513D6467C9B95764D573 /* flex-api-ios-sdk.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/flex-api-ios-sdk";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				2965F1A2AB6A3925DFD6499AC34A1BDF /* Pods */,
+				D4255C98E16818DC521BA67EC3663F32 /* Products */,
+				507DF80F74D08BBB9661F143B28DC555 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4255C98E16818DC521BA67EC3663F32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05DBFE83636826B9C6FEF4F3BDED7A7A /* flex-api-ios-sdk */,
+				88AB825C2C599B93FFFFAE9F6CF03CA8 /* Pods-flex-v2-ios-sample */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0BCAF40CE2CC808095E37A87EE744178 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCF6C7756A224CB00C1D51F62252AAD4 /* Pods-flex-v2-ios-sample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CE98C5E78C2E52A2D7181F72A4F4B72 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43188DEF566B38E0E3EB217B76004516 /* Base64.h in Headers */,
+				E2E034D3F3C09DAAD01DFC7DECC82FC3 /* CybsAesGcm.h in Headers */,
+				958564BBC9350492E8441A17A13A6B60 /* CybsAGAesComponents.h in Headers */,
+				E93B353676F6343CC5F372553054278D /* CybsAGBitwiseComponents.h in Headers */,
+				FA92E8A69A8F5719280263ACAB4C2E95 /* CybsAGCipheredData.h in Headers */,
+				567BB009EA2EFBE947EB7600CB3E23BF /* CybsAGError.h in Headers */,
+				ACE044C3539A913B98E13112F12B171E /* CybsAGGcmEndianness.h in Headers */,
+				AD64A141971B2AB34369A34838707EAD /* CybsAGGcmMathComponents.h in Headers */,
+				49FA665120CC527124767EF51C305C0A /* CybsAGTypes.h in Headers */,
+				B2B3311AB0E59D3ED90CB007B03CF4F4 /* flex-api-ios-sdk.h in Headers */,
+				CF3845F231B3EF4B8E33D96DA097A400 /* flex-api-ios-sdk-umbrella.h in Headers */,
+				DAD9E1E523EBC08705ABD8D206145F6D /* IAGCipheredData.h in Headers */,
+				40EA8DEA365CABDC427AF68F12F9F1E1 /* RSAUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7BC67ACDAC04FA5820855CB9F538A75E /* flex-api-ios-sdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0605C7D4FDA36D49B1A6F39DE4518DA9 /* Build configuration list for PBXNativeTarget "flex-api-ios-sdk" */;
+			buildPhases = (
+				9CE98C5E78C2E52A2D7181F72A4F4B72 /* Headers */,
+				8A5BDCC31EDB6D5A497CCD68D683742B /* Sources */,
+				70154CB26B0320106A956AA6F3A0ACFA /* Frameworks */,
+				B3FCD86BB5BE608D46D8A2F073787AE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "flex-api-ios-sdk";
+			productName = flex_api_ios_sdk;
+			productReference = 05DBFE83636826B9C6FEF4F3BDED7A7A /* flex-api-ios-sdk */;
+			productType = "com.apple.product-type.framework";
+		};
+		E257464FE6D24EFFD0F8C2FDFD57D6D9 /* Pods-flex-v2-ios-sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4861FDCE418FFC3531247320FFB68F58 /* Build configuration list for PBXNativeTarget "Pods-flex-v2-ios-sample" */;
+			buildPhases = (
+				0BCAF40CE2CC808095E37A87EE744178 /* Headers */,
+				67B90AE3D70F17BC15FE08914EE03365 /* Sources */,
+				78331A375B787FA79D90BBB7A0849612 /* Frameworks */,
+				E4DDECB840B03995837AA7A9449E741C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23A29EB27296DD015A79EEC5CEB496E9 /* PBXTargetDependency */,
+			);
+			name = "Pods-flex-v2-ios-sample";
+			productName = Pods_flex_v2_ios_sample;
+			productReference = 88AB825C2C599B93FFFFAE9F6CF03CA8 /* Pods-flex-v2-ios-sample */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = D4255C98E16818DC521BA67EC3663F32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BC67ACDAC04FA5820855CB9F538A75E /* flex-api-ios-sdk */,
+				E257464FE6D24EFFD0F8C2FDFD57D6D9 /* Pods-flex-v2-ios-sample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3FCD86BB5BE608D46D8A2F073787AE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4DDECB840B03995837AA7A9449E741C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67B90AE3D70F17BC15FE08914EE03365 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4768353200EDF925E6ECB59E0163300 /* Pods-flex-v2-ios-sample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A5BDCC31EDB6D5A497CCD68D683742B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACD8A9BFC0061D6167FA702C58C7D0E4 /* AESEncryption.swift in Sources */,
+				B828A503557B26E37108049197AB2B07 /* AESGCM.swift in Sources */,
+				209A477EF8F583EC7D715ECC5561AD2A /* AESGCMEncryption.swift in Sources */,
+				74455D6D22B30098F8AE44B6CE6BBDDA /* AlgorithmExtensions.swift in Sources */,
+				A6C412FC2B6E757368019BE3F3FB0A6B /* Algorithms.swift in Sources */,
+				0B6A9272A1CD1EB7CEC2BC8CCC0362A3 /* Base64.m in Sources */,
+				04FFE73BB8A84E8DD5F1C081910EB5A1 /* CaptureContext.swift in Sources */,
+				E8CB1E67FB2823CD805186D5E13F19D6 /* CaptureContextImpl.swift in Sources */,
+				76B9FE5145616EC414517BCDB1CF5204 /* Claims.swift in Sources */,
+				26CD9DC734A8BDC4E6D51406887C9AC1 /* Compressor.swift in Sources */,
+				D44EA7382063C19BE1AE2F4D87A70810 /* Constants.swift in Sources */,
+				30CE4DD721C0A00EA99AB80A2EF80FB5 /* ContentEncryption.swift in Sources */,
+				02A950A49B685ECB7E7E88C484DD452B /* CryptoUtils.swift in Sources */,
+				9F171CFD8590A50C8378C24B483BB528 /* CybsAesGcm.m in Sources */,
+				F3789A56F266A2F26D5807C0614BDEFF /* CybsAGAesComponents.m in Sources */,
+				D34FD6928E7B2B2335B5F5097988290D /* CybsAGBitwiseComponents.m in Sources */,
+				9EBCB5D3A5114069B3C985B2A7A2DD93 /* CybsAGCipheredData.m in Sources */,
+				6363C2681C0421720255DB6C7FF6603C /* CybsAGError.m in Sources */,
+				24D83E5FAECB0E97270BAA260F773B4F /* CybsAGGcmEndianness.m in Sources */,
+				1BCE46635BB29CA86A35167A679B9FEA /* CybsAGGcmMathComponents.m in Sources */,
+				6B3AB55CA6FC2F438B89A3C01C96CA0B /* CybsFlexJWTClaims.swift in Sources */,
+				4AC7FF48087D53E65F7C772D4A1B122D /* Data+Base64URLEncoded.swift in Sources */,
+				C191AECA7012061C1FB05AEF8508B633 /* DataConvertible.swift in Sources */,
+				A0CBEDDCE8BB30C36B5258AECC2339D2 /* DataExtensions.swift in Sources */,
+				1F4BA84EF6DC8E0174D51B4499ECD4C1 /* DigestHelper.swift in Sources */,
+				051418793F0F59AD64B07316D78187BD /* Encrypter.swift in Sources */,
+				D257175F52CA429B0BB66744AC8373A0 /* flex-api-ios-sdk-dummy.m in Sources */,
+				35D30180C6EC7274F6C6ADBD61512F50 /* FlexErrorResponse.swift in Sources */,
+				8615599E2B536C0E22873D4217F52C74 /* FlexInternalErrors.swift in Sources */,
+				E3E1193026D22C41D8F07E45ADFDE961 /* FlexRequest.swift in Sources */,
+				1D8D7BE99DB318B6D7DAAC9A5F772BE3 /* FlexService.swift in Sources */,
+				507EE1240326C5B539A429F6F6F0135C /* FlexServiceProtocol.swift in Sources */,
+				00B562AAE9FFF87E75B0DBB90085CE96 /* FlexTokensGenerator.swift in Sources */,
+				4D36DCE723CA82B90EB4802B48373B8D /* Header.swift in Sources */,
+				14647C261CFDBD9C8D1EBDF313C2F90D /* HTTPClient.swift in Sources */,
+				6BDC0F5EF29EFA5839DF4A768DF4A6FC /* HttpResponse.swift in Sources */,
+				C6D03FB5AB7746BEA74485D34B81BB39 /* JWE.swift in Sources */,
+				1C7A897D93BC5D37A04B89E15894E1C1 /* JWECommonHeader.swift in Sources */,
+				827765C9B990F12929E8751B209A14E2 /* JWEHeader.swift in Sources */,
+				1416F348B5112163E2854F586FB69580 /* JWESwiftError.swift in Sources */,
+				44180B22C2389A058C0E3BAB4F7C4DC1 /* JWT.swift in Sources */,
+				A2BD0E760D9D78918668497DBE5D5ABD /* JWTDecoder.swift in Sources */,
+				C65B323CD018E58348648E2A5FA8E9CB /* JWTError.swift in Sources */,
+				CF46D4719FF99EDD6FBEFEAEFA1C7D46 /* JWTVerifier.swift in Sources */,
+				E63F66A3F4791764771BC18995CA3B6F /* KeyManagementMode.swift in Sources */,
+				5FC28F185D733618F25A059CF603EF0A /* LongTermKey.swift in Sources */,
+				0494AB414599B02CBFA3B16590522C27 /* module.modulemap in Sources */,
+				4592B8780736EB9BBBF00A4F1F9E8F09 /* NoneAlgorithm.swift in Sources */,
+				8101734921FD948811532A0855BAA16B /* Payload.swift in Sources */,
+				5A8ACBC77CF5BEC93B2DA23DA574A8A6 /* RemoteFlexToken.swift in Sources */,
+				2A2AF895719E05FD16E2C329F720E85F /* RemoteFlexTokenMapper.swift in Sources */,
+				A0E00308F000E59AAF02AF720AEB3698 /* RemoteFlexTokensGenerator.swift in Sources */,
+				45A00BD1081F5ECE445618F347A3A5CE /* RSA.swift in Sources */,
+				2D20E60EAFDADAF0F600A04E6DB4BE81 /* RSAAlgorithm.swift in Sources */,
+				89E282882A84E3EE742C939001E32088 /* RSAKeyEncryption.swift in Sources */,
+				97297B91BFA5B40562E13F703E9815D9 /* RSAKeyType.swift in Sources */,
+				49E1EAC43846DEC9E558F41EA53CF23A /* RSAUtilities.swift in Sources */,
+				E370C3A381BD7E2BE9B11A991C4504A3 /* RSAUtils.m in Sources */,
+				991F7A1DCF31248C8AA96FEE963D8EB9 /* SecureRandom.swift in Sources */,
+				807EF6B786E85F3042E0005F2F385134 /* Serializer.swift in Sources */,
+				BD250151DFCDB9E49CFADC626B8B763C /* Tools.swift in Sources */,
+				A5DED56C2D080502B886F8ABC8073F67 /* TransientToken.swift in Sources */,
+				EFF3C5D34382348DE3BC1BD5A6AD5D07 /* URLSessionHTTPClient.swift in Sources */,
+				E4DDAE6839140A81A65AC394E53F7233 /* ValidateClaimsResult.swift in Sources */,
+				94E95B6F50E5EF08371037F2EA39D602 /* VerifierAlgorithm.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23A29EB27296DD015A79EEC5CEB496E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "flex-api-ios-sdk";
+			target = 7BC67ACDAC04FA5820855CB9F538A75E /* flex-api-ios-sdk */;
+			targetProxy = 7585AD895F0EB4470863F40222896F7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3B35F05BECD72BFB67A85D1E249F107F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20193C1AE87F513D6467C9B95764D573 /* flex-api-ios-sdk.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/flex-api-ios-sdk/flex-api-ios-sdk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/flex-api-ios-sdk/flex-api-ios-sdk-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/flex-api-ios-sdk/flex-api-ios-sdk.modulemap";
+				PRODUCT_MODULE_NAME = flex_api_ios_sdk;
+				PRODUCT_NAME = flex_api_ios_sdk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		92486E5E72E54FAF60E1A7D022C21B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		934ED2B84836A780113D1F63484628B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		93E0D848036EB7CAD81A972E6C0EF5F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A127272D795A2AA35380F3E61DC8A2E4 /* Pods-flex-v2-ios-sample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-flex-v2-ios-sample/Pods-flex-v2-ios-sample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-flex-v2-ios-sample/Pods-flex-v2-ios-sample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B6D1DF52DF1CDD5B74B2BF59259795C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCBB8AE18C2E9A64EFE6B19EDC7324C2 /* Pods-flex-v2-ios-sample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-flex-v2-ios-sample/Pods-flex-v2-ios-sample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-flex-v2-ios-sample/Pods-flex-v2-ios-sample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F830942654630997C83F594CEACDA688 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13C6AC586F40915F3042B45FD043DEFA /* flex-api-ios-sdk.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/flex-api-ios-sdk/flex-api-ios-sdk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/flex-api-ios-sdk/flex-api-ios-sdk-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/flex-api-ios-sdk/flex-api-ios-sdk.modulemap";
+				PRODUCT_MODULE_NAME = flex_api_ios_sdk;
+				PRODUCT_NAME = flex_api_ios_sdk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0605C7D4FDA36D49B1A6F39DE4518DA9 /* Build configuration list for PBXNativeTarget "flex-api-ios-sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F830942654630997C83F594CEACDA688 /* Debug */,
+				3B35F05BECD72BFB67A85D1E249F107F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				934ED2B84836A780113D1F63484628B2 /* Debug */,
+				92486E5E72E54FAF60E1A7D022C21B10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4861FDCE418FFC3531247320FFB68F58 /* Build configuration list for PBXNativeTarget "Pods-flex-v2-ios-sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D1DF52DF1CDD5B74B2BF59259795C2 /* Debug */,
+				93E0D848036EB7CAD81A972E6C0EF5F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

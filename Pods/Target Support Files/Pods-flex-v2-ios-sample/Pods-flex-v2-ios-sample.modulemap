@@ -1,0 +1,6 @@
+framework module Pods_flex_v2_ios_sample {
+  umbrella header "Pods-flex-v2-ios-sample-umbrella.h"
+
+  export *
+  module * { export * }
+}
