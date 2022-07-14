@@ -14,13 +14,6 @@
     pod 'flex-api-ios-sdk'
   ```
 
-  ### Configure merchant details
-  ```swift
-    val merchantId = "<MerchantID>"
-    val merchantSecret = "<MerchantSecret>"
-    val merchantKey = "<MerchantKey>"
- ```
-
   ### How to run the sample application?
 
   Select  ```flex-client-sdk``` from target list. Keep only ```flex-client-sdk``` and ```CybersourceFlexSDK```,  remove any other schemes from Manage Schemes option.
@@ -30,6 +23,11 @@
   ## SDK Usage
 
   ### Configure merchant details
+  ```swift
+    val merchantId = "<MerchantID>"
+    val merchantSecret = "<MerchantSecret>"
+    val merchantKey = "<MerchantKey>"
+ ```
 
   ### Create capture context
   Please refer sample application which demonstrates creation of Capture context  
