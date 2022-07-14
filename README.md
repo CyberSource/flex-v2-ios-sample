@@ -7,7 +7,9 @@
   ## SDK Installation 
 
   ### CocoaPods
-    CocoaPods is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Cybersource Flex iOS SDK into your Xcode project using CocoaPods, specify it in your Podfile:
+    CocoaPods is a dependency manager for Cocoa projects. For usage and installation instructions, 
+    visit their website. To integrate Cybersource Flex iOS SDK into your Xcode project using CocoaPods, 
+    specify it in your Podfile:
   ```swift
         pod 'flex-api-ios-sdk'
   ```
